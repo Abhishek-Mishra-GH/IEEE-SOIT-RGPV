@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Committee() {
+export default function About() {
   return (
     <div>
-      Committee
+      About
     </div>
   )
 }

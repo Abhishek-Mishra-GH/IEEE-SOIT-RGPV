@@ -4,6 +4,8 @@ import Home from "./pages/Home"
 import Committee from "./pages/Committee"
 import Events from "./pages/Events"
 import ContactUs from "./pages/ContactUs"
+import About from "./pages/About"
+import Gallery from "./pages/Gallery"
 
 function App() {
 
@@ -13,10 +15,13 @@ function App() {
       {/* Routes */}
       <Routes>
         <Route path="/" element={ <Home/> } />
-        <Route path="/committee" element={ <Committee/> } />
+        <Route path="/about" element={ <About/> } />
         <Route path="/events" element= { <Events/>} />
-        <Route path="/contact" element={ <ContactUs />} />
+        <Route path="/gallery" element={ <Gallery/> } />
+        <Route path="/committee" element={ <Committee/> } />
+        <Route path="/contactus" element={ <ContactUs />} />
       </Routes>
+      
     </>
   )
 }
