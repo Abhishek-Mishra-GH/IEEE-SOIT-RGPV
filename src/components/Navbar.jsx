@@ -14,7 +14,7 @@ function Navbar() {
         </div>
 
       {/* right nav */}
-      <div className="flex gap-4 text-lg items-center text-primary-foregrund">
+      <div className="hidden sm:flex gap-4 text-lg items-center text-primary-foregrund">
         <NavLink to="/" className="mx-2">Home</NavLink>
         <NavLink to="/about" className="mx-2">About</NavLink>
         <NavLink to="/event" className="mx-2">Event</NavLink>
