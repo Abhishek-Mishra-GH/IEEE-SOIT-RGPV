@@ -3,11 +3,9 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { CgProfile } from "react-icons/cg";
 import { IconContext } from "react-icons";
-
-
+import Navbar from "../components/Navbar";
 
 // all details of the executive and operating members are stored in the array of objects. The details are then mapped to the respective components.
-
 
 const executiveMembers = [
   {
@@ -36,32 +34,32 @@ const executiveMembers = [
   },
 ];
 
-const operaatingMembers =[{
-  name: "Dr. R. K. Singh",
-  email: "test123@gmail.com",
-  designation: "President",
-  icon: <CgProfile />,
-},
-{
-  name: "Dr. R. K. Singh",
-  email: "test123@gmail.com",
-  designation: "President",
-  icon: <CgProfile />,
-},
-{
-  name: "Dr. R. K. Singh",
-  email: "test123@gmail.com",
-  designation: "President",
-  icon: <CgProfile />,
-},
-{
-  name: "Dr. R. K. Singh",
-  email: "test123@gmail.com",
-  designation: "President",
-  icon: <CgProfile />,
-},
-
-]
+const operaatingMembers = [
+  {
+    name: "Dr. R. K. Singh",
+    email: "test123@gmail.com",
+    designation: "President",
+    icon: <CgProfile />,
+  },
+  {
+    name: "Dr. R. K. Singh",
+    email: "test123@gmail.com",
+    designation: "President",
+    icon: <CgProfile />,
+  },
+  {
+    name: "Dr. R. K. Singh",
+    email: "test123@gmail.com",
+    designation: "President",
+    icon: <CgProfile />,
+  },
+  {
+    name: "Dr. R. K. Singh",
+    email: "test123@gmail.com",
+    designation: "President",
+    icon: <CgProfile />,
+  },
+];
 const ContactUs = () => {
   const [send, setSend] = useState(false);
   const [init, setInit] = useState(false);
@@ -117,10 +115,6 @@ const ContactUs = () => {
     []
   );
 
-
-
-
-
   function executivemap(member) {
     return (
       <>
@@ -136,10 +130,9 @@ const ContactUs = () => {
     );
   }
 
-
-
   return (
     <>
+      <Navbar />
       <div className="flex flex-col">
         <div>
           <div className="w-full">
@@ -147,11 +140,12 @@ const ContactUs = () => {
               <Particles options={options} />
             </div>
           </div>
-          <div className="font-semibold text-white xl:top-[21%] top-[15%] md:top-[9%] grid items-center justify-center w-full text-5xl md:text-7xl  absolute">
+          <div className="font-semibold text-white xl:top-[21%] top-[15%] md:top-[9%]  grid items-center justify-center w-full text-5xl md:text-7xl  absolute">
             <h1>CONTACT US</h1>
           </div>
         </div>
 
+        {/* please add these class in above div after adding navbar   (xl:top-[12%] top-[10%] md:top-[5%]) */}
         {/* Committee Members Contact Details */}
 
         <div>
@@ -174,10 +168,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-
-
-             {/* contact us form  */}
-
+        {/* contact us form  */}
 
         <div className="grid justify-items-center mb-6">
           <div className=" grid justify-items-center font-sans font-semibold">
@@ -233,7 +224,7 @@ const ContactUs = () => {
 
                 <div className="flex justify-center">
                   <button
-                    className="rounded-md border-solid border-2 border-zinc-500 pl-2 pr-2 bg-primary-background text-primary-foregrund w-28 text-lg"
+                    className="rounded-md border-solid border-2 border-zinc-500 pl-2 pr-2 bg-primary-background text-white w-28 text-lg"
                     type="submit"
                     onClick={() => setSend(true)}
                   >
