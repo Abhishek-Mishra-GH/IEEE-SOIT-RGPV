@@ -1,27 +1,27 @@
-import Navbar from "./components/Navbar"
 import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Committee from "./pages/Committee"
-import Events from "./pages/Events"
+import Event from "./pages/Event"
 import ContactUs from "./pages/ContactUs"
-import About from "./pages/About"
 import Gallery from "./pages/Gallery"
+import Test from "./pages/Test"
+import Footer from "./components/Footer"
 
 function App() {
 
   return (
     <>
-      <Navbar />
-      {/* Routes */}
       <Routes>
+        <Route path="/test" element={ <Test/> } />
         <Route path="/" element={ <Home/> } />
-        <Route path="/about" element={ <About/> } />
-        <Route path="/events" element= { <Events/>} />
+        <Route path="/event" element= { <Event/>} />
         <Route path="/gallery" element={ <Gallery/> } />
         <Route path="/committee" element={ <Committee/> } />
         <Route path="/contactus" element={ <ContactUs />} />
       </Routes>
-      
+
+      {/* Footer */}
+      <Footer />
     </>
   )
 }

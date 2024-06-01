@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         'primary-background': '#002250',
-        'primary-foregrund': '#DDF5FD',
+        'primary-foreground': "#71d3f4",
+        // 'primary-foregrund': '#DDF5FD',
       }
     },
   },
