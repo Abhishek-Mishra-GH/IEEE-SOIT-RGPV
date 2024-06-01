@@ -6,7 +6,7 @@ export default function Home() {
   return (
     // wrapper div
     <div>
-      <div className='border-4 border-red-500 flex h-screen '>
+      <div className='border-4 flex h-screen '>
         <HomeIntro/>
       </div>
       <Navbar />

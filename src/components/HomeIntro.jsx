@@ -74,8 +74,8 @@ export default function HomeIntro() {
     if (init) {
         return (
             <div id='introPage'>
-            <div className="flex absolute top-0 left-0 h-full w-full ">
-                <div className="relative w-full">
+            <div className="flex absolute top-0 left-0 h-screen w-full ">
+                <div className="relative h-full w-full">
                     <Particles options={options} />
                 </div>
             </div>
