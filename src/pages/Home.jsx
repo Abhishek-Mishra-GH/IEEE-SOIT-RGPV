@@ -6,7 +6,7 @@ export default function Home() {
   return (
     // wrapper div
     <div>
-      <div className='md:mb-[100vh] mb-[calc(100vh-5rem)]'>
+      <div className='md:mb-[100vh] mb-[calc(100dvh-1px)]'>
         <HomeIntro/>
       </div>
       <Navbar />
