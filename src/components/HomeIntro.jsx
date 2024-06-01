@@ -25,6 +25,18 @@ export default function HomeIntro() {
                 enable: true,
                 zIndex: 1,
             },
+            interactivity: {
+                events: {
+                  onClick: {
+                    enable: true,
+                    mode: "push",
+                  },
+                  onHover: {
+                    enable: true,
+                    mode: "attract",
+                  },
+                },
+            },
             style: {
                 position: "absolute",
 
@@ -61,9 +73,9 @@ export default function HomeIntro() {
 
     if (init) {
         return (
-            <>
-            <div className="flex absolute top-0 left-0 h-full w-full ">
-                <div className="relative w-full">
+            <div id='introPage'>
+            <div className="flex absolute top-0 left-0 h-screen w-full ">
+                <div className="relative h-full w-full">
                     <Particles options={options} />
                 </div>
             </div>
@@ -72,7 +84,7 @@ export default function HomeIntro() {
                 <h1 className="my-1">Institute of Electrical and</h1>
                 <h1 className="my-1">Electronics Engineers</h1>
             </div>
-            </>
+            </div>
         )
-    }
+    } else return null
 }
