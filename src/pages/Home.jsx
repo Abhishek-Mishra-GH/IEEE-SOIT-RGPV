@@ -42,7 +42,7 @@ export default function Home() {
         id='animateNav' 
         initial={{opacity: 0}} 
         animate={{opacity: isAtTop ? 1 : 0}}
-        transition={{duration: 0.8}}
+        transition={{duration: 0.6, ease: 'easeInOut'}}
         className="sticky top-0">
 
         <Navbar />

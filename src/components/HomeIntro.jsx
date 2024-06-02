@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
+import { motion } from 'framer-motion'
 
 export default function HomeIntro() {
 
@@ -78,11 +79,15 @@ export default function HomeIntro() {
                     <Particles options={options} />
                 </div>
             </div>
-            <div className="absolute text-white top-1/2 left-[10%] -translate-y-1/2  md:text-7xl sm:text-5xl text-2xl">
+            <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, ease: "easeInOut"}}
+                className="absolute text-white top-1/2 left-[10%] -translate-y-1/2  md:text-7xl sm:text-5xl text-2xl select-none">
                 <h2 className="sm:text-4xl md:text-6xl text-xl my-1 font-light">IEEE RGPV</h2>
                 <h1 className="my-1">Institute of Electrical and</h1>
                 <h1 className="my-1">Electronics Engineers</h1>
-            </div>
+            </motion.div>
             </div>
         )
     } else return null
