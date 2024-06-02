@@ -19,13 +19,16 @@ function Navbar() {
           </Link>
         </div>
 
-      {/* right nav */}
-      <div className="hidden h-full sm:flex gap-4 text-lg items-center text-white">
+      {/* middle nav */}
+      <div className="hidden h-full sm:flex gap-8 text-lg items-center text-white">
         <CustomNavLink to="/"> Home </CustomNavLink>
         <CustomNavLink to="/committee"> Committee </CustomNavLink>
         <CustomNavLink to="/event"> Event </CustomNavLink>
         <CustomNavLink to="/gallery"> Gallery </CustomNavLink>
+      </div>
 
+      {/* right nav */}
+      <div className="hidden h-full sm:flex gap-4 text-lg items-center text-white">
         <CustomNavLink to="/contactus" className="border px-4 py-1 rounded-full hover:border-primary-foreground">Contact Us</CustomNavLink>
       </div>
     </nav>

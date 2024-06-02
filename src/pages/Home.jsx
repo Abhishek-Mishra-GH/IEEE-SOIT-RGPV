@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import HomeIntro from '../components/HomeIntro'
 import Navbar from '../components/Navbar'
 import { motion } from 'framer-motion'
@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 export default function Home() {
 
   const [isAtTop, setIsAtTop] = useState(false);
-  const [navTop, setNavTop] = useState(0)
 
 
   useEffect(() => {
@@ -16,7 +15,6 @@ export default function Home() {
 
     if(navElement) {
       const offSetTop = navElement.getBoundingClientRect().top + scrollTop
-      setNavTop(offSetTop)
       if(scrollTop >= offSetTop) {
         setIsAtTop(true)
       } else {
@@ -52,7 +50,6 @@ export default function Home() {
 
       </motion.div>
       <div className="h-[200vh]"></div>
-
 
     </div>
   )
