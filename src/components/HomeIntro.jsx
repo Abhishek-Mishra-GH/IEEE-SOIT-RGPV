@@ -79,7 +79,7 @@ export default function HomeIntro() {
                 </div>
             </div>
             <div className="absolute text-white top-1/2 left-[10%] -translate-y-1/2  md:text-7xl sm:text-5xl text-2xl">
-                <h2 className="sm:text-4xl md:text-6xl text-xl my-1 font-light">IEEE SoIT RGPV</h2>
+                <h2 className="sm:text-4xl md:text-6xl text-xl my-1 font-light">IEEE RGPV</h2>
                 <h1 className="my-1">Institute of Electrical and</h1>
                 <h1 className="my-1">Electronics Engineers</h1>
             </div>
