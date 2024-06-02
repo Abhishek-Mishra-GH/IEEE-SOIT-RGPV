@@ -17,7 +17,6 @@ export default function HomeIntro() {
     const options = useMemo(
         () => ({
             fpsLimit: 120,
-            interactivity: {},
             background: {
                 color: "#000000",
             },
