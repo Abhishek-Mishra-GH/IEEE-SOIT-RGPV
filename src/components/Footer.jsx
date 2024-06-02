@@ -34,7 +34,7 @@ function Footer() {
     
     
     {/*second section*/}
-    <div class = " text-white relative top-2 p-2 flex flex-col">
+    <div class = " text-white relative top-2 p-2 flex flex-col items-start">
     <h2 class = "p-1 flex justify-center font-bold underline">INFORMATION</h2>
    <p class = "p-1 flex justify-center gap-1 items-center"> < FaHome /> Home </p>
    <p class = "p-1 flex justify-center gap-1 items-center"> < HiMiniQuestionMarkCircle /> About us</p>
