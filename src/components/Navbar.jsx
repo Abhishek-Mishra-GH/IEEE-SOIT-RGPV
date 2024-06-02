@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 import clsx from 'clsx'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function CustomNavLink({ children, to, className="" }) {
   return (
@@ -28,9 +29,15 @@ function Navbar() {
       </div>
 
       {/* right nav */}
-      <div className="hidden h-full sm:flex gap-4 text-lg items-center text-white">
+      <div className="hidden h-full sm:flex text-lg items-center text-white">
         <CustomNavLink to="/contactus" className="border px-4 py-1 rounded-full hover:border-primary-foreground">Contact Us</CustomNavLink>
       </div>
+
+      {/* mobile menu */}
+      <div className="sm:hidden">
+        <GiHamburgerMenu className="text-white text-3xl " />
+      </div>
+
     </nav>
   )
 }

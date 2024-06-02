@@ -7,7 +7,6 @@ export default function Home() {
 
   const [isAtTop, setIsAtTop] = useState(false);
 
-
   useEffect(() => {
    const handleScroll = () => {
     const scrollTop = window.scrollY
