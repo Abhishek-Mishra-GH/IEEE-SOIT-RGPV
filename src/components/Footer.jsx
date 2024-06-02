@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.svg';
 import { MdContacts } from "react-icons/md"
 import { FaHome } from "react-icons/fa";
 import { GrGallery } from "react-icons/gr";
@@ -21,7 +22,7 @@ function Footer() {
     
    {/*first section*/}
     <div class = " text-center text-white relative top-2 p-2 ">
-    <img class= " text-center text-white flex justify-center" src = "" alt = "ieee img" />
+    <img class= " text-center text-white flex justify-center" src={ logo } alt = "ieee img" />
     <p class = " text-white p-4 flex justify-center md:text-center "> IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity</p>
 <a href = " ieeesoit@gmail.com">
     <p class = "flex gap-0.5 items-center  justify-center">
