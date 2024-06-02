@@ -21,7 +21,7 @@ function Footer() {
     <div class=" bg-blue-950 text-white md:flex gap-16">
     
    {/*first section*/}
-    <div class = " text-center text-white relative top-2 p-2 ">
+    <div class = " text-center text-white relative top-2 p-2 flex flex-col items-center">
     <img class= " text-center text-white flex justify-center" src={ logo } alt = "ieee img" />
     <p class = " text-white p-4 flex justify-center md:text-center "> IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity</p>
 <a href = " ieeesoit@gmail.com">
