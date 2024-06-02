@@ -21,7 +21,7 @@ function Navbar() {
         </div>
 
       {/* middle nav */}
-      <div className="hidden h-full sm:flex gap-8 text-lg items-center text-white">
+      <div className="hidden h-full sm:flex gap-12 text-lg items-center text-white">
         <CustomNavLink to="/"> Home </CustomNavLink>
         <CustomNavLink to="/committee"> Committee </CustomNavLink>
         <CustomNavLink to="/event"> Event </CustomNavLink>
