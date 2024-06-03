@@ -24,8 +24,8 @@ function Footer() {
         {/*first section*/}
 
         <div className="text-md flex flex-col md:items-start gap-6 max-w-fit md:mt-5">
-          <Link to="/"> 
-          <img class=" text-center text-white flex justify-center" src={logo} alt="ieee img" />
+          <Link to="/" className='mx-auto'> 
+          <img src={logo} alt="ieee img" />
           </Link>
 
           <div>
@@ -84,11 +84,17 @@ function Footer() {
 
       {/* Fifth Section */}
       <div class="w-full h-1 bg-white"> </div>
-      <div class=" py-2 bg-blue-950 text-white  text-center md:flex gap-36 justify-center">
+      <div className='bg-blue-950 flex justify-center'>
+      <div class="max-w-fit py-2 text-white  text-center flex flex-col gap-2 items-start md:flex-row md:gap-36 justify-center">
         <p>CopyRight © 2024</p>
         <p>All Rights are Reserved</p>
-        <a className="hover:cursor-pointer hover:text-primary-foreground">Terms & Conditions</a>
-        <a className="hover:cursor-pointer hover:text-primary-foreground">Privacy Policy</a>
+        <div>
+          <a className="hover:cursor-pointer hover:text-primary-foreground">Terms & Conditions</a>
+        </div>
+        <div>
+          <a className="hover:cursor-pointer hover:text-primary-foreground">Privacy Policy</a>
+        </div>
+      </div>
       </div>
     </footer>
   )
