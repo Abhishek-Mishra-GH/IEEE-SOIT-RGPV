@@ -52,7 +52,7 @@ export default function Home() {
 
       <IEEE />
 
-      <div className="h-[200vh]"></div>
+      <div className="h-[40vh]"></div>
 
     </div>
   )
