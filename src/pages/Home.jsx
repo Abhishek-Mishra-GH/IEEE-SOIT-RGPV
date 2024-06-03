@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import HomeIntro from '../components/HomeIntro'
 import Navbar from '../components/Navbar'
 import { motion } from 'framer-motion'
+import IEEE from "../components/IEEE";
 
 export default function Home() {
 
@@ -48,6 +49,9 @@ export default function Home() {
         <Navbar />
 
       </motion.div>
+
+      <IEEE />
+
       <div className="h-[200vh]"></div>
 
     </div>
