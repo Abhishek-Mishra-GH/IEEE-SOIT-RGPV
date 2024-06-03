@@ -47,7 +47,7 @@ function Footer() {
         <div class="max-w-fit text-white relative top-2 p-2 flex flex-col items-center md:items-start">
           <h2 class="p-1 flex justify-center font-bold underline">INFORMATION</h2>
           <div className="flex flex-col items-start max-w-fit">
-          <Link to="/home" class="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < FaHome /> Home </Link>
+          <Link to="/" class="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < FaHome /> Home </Link>
           <a class="p-1 flex justify-center gap-1 items-center hover:cursor-pointer hover:text-primary-foreground"> < HiMiniQuestionMarkCircle /> About us</a>
           <Link to="/event" class="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < SlCalender /> Event</Link>
           <Link to="/gallery" class="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < GrGallery /> Gallery</Link>
