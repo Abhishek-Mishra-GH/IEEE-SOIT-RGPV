@@ -35,7 +35,7 @@ function Footer() {
             <p> benefit of humanity</p>
           </div>
 
-          <a href=" ieeesoit@gmail.com">
+          <a href="mailto:ieeesoit@gmail.com">
             <p class="flex gap-1 items-center  justify-center"> <IoMdMail /> ieeesoit@gmail.com</p>
           </a>
 
