@@ -82,19 +82,17 @@ function Footer() {
         </div>
       </div>
 
-      {/* Fifth Section */}
       <div className="w-full h-1 bg-white"> </div>
-      <div className='bg-blue-950 flex justify-center'>
-      <div className="max-w-fit py-2 text-white  text-center flex flex-col gap-2 items-start md:flex-row md:gap-36 justify-center">
-        <p>CopyRight © 2024</p>
-        <p>All Rights are Reserved</p>
-        <div>
-          <a className="hover:cursor-pointer hover:text-primary-foreground">Terms & Conditions</a>
+
+      {/* Fifth Section */}
+      <div className='bg-blue-950 flex flex-col items-center md:flex-row md:justify-between py-4 px-8 text-white'>
+        <div className="text-xs md:text-base my-2">
+          <p> © Copyright 2024 IEEE RGPV - All rights reserved.</p>
         </div>
-        <div>
-          <a className="hover:cursor-pointer hover:text-primary-foreground">Privacy Policy</a>
+        <div className="flex flex-col items-center gap-2 md:flex-row"> 
+          <a href="https://www.ieee.org/about/help/site-terms-conditions.html" className="mx-4 hover:cursor-pointer hover:text-primary-foreground">Terms & Conditions</a>
+          <a href="https://www.ieee.org/security-privacy.html" className="mx-4 hover:cursor-pointer hover:text-primary-foreground">Privacy Policy</a>
         </div>
-      </div>
       </div>
     </footer>
   )

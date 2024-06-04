@@ -3,6 +3,7 @@ import HomeIntro from '../components/HomeIntro'
 import Navbar from '../components/Navbar'
 import { motion } from 'framer-motion'
 import IEEE from "../components/IEEE";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
 
@@ -51,6 +52,9 @@ export default function Home() {
       </motion.div>
 
       <IEEE />
+      <div>
+        <ContactForm />
+      </div>
 
       <div className="h-[40vh]"></div>
 
