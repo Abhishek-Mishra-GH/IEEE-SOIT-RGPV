@@ -6,7 +6,7 @@ import { GrGallery } from "react-icons/gr";
 import { HiMiniQuestionMarkCircle } from "react-icons/hi2";
 import { SlCalender } from "react-icons/sl";
 import { FaLinkedin } from "react-icons/fa6";
-import { FaTwitterSquare } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -70,7 +70,7 @@ function Footer() {
               < FaLinkedin className="text-2xl hover:text-primary-foreground"/>
             </a>
             <a href="https://x.com/IEEERGPVSoIT?t=aDTDxhq4OouwTLfkE-Mumw&s=35">
-              < FaTwitterSquare className="text-2xl hover:text-primary-foreground"/>
+              <BsTwitterX className="text-2xl hover:text-primary-foreground"/>
             </a>
             <a href="https://www.facebook.com/profile.php?id=61560810020758">
             < FaFacebook className="text-2xl hover:text-primary-foreground" />
