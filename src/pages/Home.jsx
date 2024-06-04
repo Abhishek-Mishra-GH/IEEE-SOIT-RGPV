@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import { motion } from 'framer-motion'
 import IEEE from "../components/IEEE";
 import IEEEH from '../components/IEEEH';
+import ContactForm from "../components/ContactForm";
 export default function Home() {
 
   const [isAtTop, setIsAtTop] = useState(false);
@@ -52,8 +53,7 @@ export default function Home() {
 
       <IEEE />
       <IEEEH/>
-
-      <div className="h-[40vh]"></div>
+      <ContactForm />
 
     </div>
   )
