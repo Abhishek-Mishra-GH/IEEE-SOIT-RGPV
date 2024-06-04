@@ -1,6 +1,8 @@
 import React, { useState, useMemo, useEffect } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import { CgProfile } from "react-icons/cg";
+import { IconContext } from "react-icons";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
@@ -11,25 +13,25 @@ const operaatingMembers = [
     name: "Ananya Mishra",
     email: "Chairieeergpv@gmail.com",
     designation: "Chairperson",
-    icon: "../src/assets/Images/01.jpg",
+    icon: <CgProfile />,
   },
   {
     name: "Vedeka Gupta",
     email: "Vicechairpersonieeergpv@gmail.com",
     designation: "Vice Chairperson",
-    icon: "./src/assets/Images/02.jpg",
+    icon: <CgProfile />,
   },
   {
     name: "Rudresh Bharadwaj",
     email: "Ieeesecretary05@gmail.com",
     designation: "Secretary",
-    icon: "./src/assets/Images/04.jpg",
+    icon:<CgProfile />,
   },
   {
     name: "Parth Parik",
     email: "Ieeergpvtreasurer@gmail.com",
     designation: "Treasurer",
-    icon: "./src/assets/Images/03.png",
+    icon:<CgProfile />,
   },
 ];
 const ContactUs = () => {
@@ -90,12 +92,16 @@ const ContactUs = () => {
   function executivemap(member) {
     return (
       <>
-        <div className="grid justify-items-center border-stone-950 rounded-xl p-4 border-2 hover:shadow-2xl">
-          <img src={member.icon} alt="Image" className="h-64 rounded-md hover:scale-110 ease-in-out duration-300 text-primary-background"/>
+        <div className="grid justify-items-center border-stone-950 rounded-xl p-4 border-2 hover:shadow-2xl w-72 ">
+          <IconContext.Provider value={{ color: "rgb(0 34 80)", size: "4em" }}>
+            <div>{member.icon}</div>
+          </IconContext.Provider>
+
           <h1 className="text-2xl mt-3 mb-3">{member.name} </h1>
           <p className="text-lg mb-3">{member.designation}</p>
-          <Link to="mailto:{member.email}" className="text-sm">{member.email}</Link>
-          
+          <Link to={`mailto:${member.email}`} className="text-sm underline underline-offset-8">
+            {member.email}
+          </Link>
         </div>
       </>
     );
@@ -116,14 +122,14 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* please add these class in above div after adding navbar   (xl:top-[12%] top-[10%] md:top-[5%]) */}
+    
         {/* Committee Members Contact Details */}
 
         <div>
-          <div className="grid justify-items-center font-semibold text-xl mt-11 mb-11">
+          <div className="grid justify-items-center font-semibold text-xl mt-5 mb-4">
             <h1 className="text-3xl">OPERATION HEADS</h1>
             <div>
-              <div className="justify-items-center mt-16 mb-10 flex flex-row gap-x-8 flex-wrap justify-around gap-4">
+              <div className="justify-items-center mt-10 mb-10 flex flex-row gap-x-8 flex-wrap justify-around gap-6">
                 {operaatingMembers.map(executivemap)}
               </div>
             </div>
