@@ -4,7 +4,7 @@ function ContactForm() {
   const [send, setSend] = useState(false)
 
   return (
-    <div className="grid justify-items-center mb-6">
+    <div className="grid justify-items-center m-6">
           <div className=" grid justify-items-center font-sans font-semibold">
             <h1 className="text-3xl">Get in touch</h1>
             <p className="text-base">
