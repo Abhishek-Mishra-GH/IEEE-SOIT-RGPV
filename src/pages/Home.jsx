@@ -3,7 +3,7 @@ import HomeIntro from '../components/HomeIntro'
 import Navbar from '../components/Navbar'
 import { motion } from 'framer-motion'
 import IEEE from "../components/IEEE";
-
+import IEEEH from '../components/IEEEH';
 export default function Home() {
 
   const [isAtTop, setIsAtTop] = useState(false);
@@ -51,6 +51,7 @@ export default function Home() {
       </motion.div>
 
       <IEEE />
+      <IEEEH/>
 
       <div className="h-[40vh]"></div>
 
