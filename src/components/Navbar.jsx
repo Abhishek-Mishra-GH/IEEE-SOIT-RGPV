@@ -29,7 +29,7 @@ function Navbar() {
       <div className="hidden h-full sm:flex gap-12 text-lg items-center text-white">
         <CustomNavLink to="/"> Home </CustomNavLink>
         <CustomNavLink to="/committee"> Committee </CustomNavLink>
-        <CustomNavLink to="/event"> Event </CustomNavLink>
+        <CustomNavLink to="/events"> Events </CustomNavLink>
         <CustomNavLink to="/gallery"> Gallery </CustomNavLink>
 
         <CustomNavLink to="/contactus" className="border px-4 py-1 rounded-full hover:border-primary-foreground">Contact Us</CustomNavLink>
@@ -60,7 +60,7 @@ function Navbar() {
 
           <CustomNavLink to="/"> Home </CustomNavLink>
           <CustomNavLink to="/committee"> Committee </CustomNavLink>
-          <CustomNavLink to="/event"> Event </CustomNavLink>
+          <CustomNavLink to="/events"> Events </CustomNavLink>
           <CustomNavLink to="/gallery"> Gallery </CustomNavLink>
 
           <div className='mt-6'>

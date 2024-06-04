@@ -9,8 +9,11 @@ export default {
       colors: {
         'primary-background': '#002250',
         'primary-foreground': "#71d3f4",
-        // 'primary-foregrund': '#DDF5FD',
-      }
+      },
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+        'kalam': ['Kalam', 'cursive'],
+      },
     },
   },
   plugins: [],

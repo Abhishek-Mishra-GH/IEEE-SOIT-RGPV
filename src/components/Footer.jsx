@@ -36,7 +36,7 @@ function Footer() {
           </div>
 
           <a href="mailto:ieeesoit@gmail.com">
-            <p class="flex gap-1 items-center  justify-center"> <IoMdMail /> ieeesoit@gmail.com</p>
+            <p className="flex gap-1 items-center  justify-center"> <IoMdMail /> ieeesoit@gmail.com</p>
           </a>
 
         </div>
@@ -44,28 +44,28 @@ function Footer() {
 
 
         {/*second section*/}
-        <div class="max-w-fit text-white relative top-2 p-2 flex flex-col items-center md:items-start">
-          <h2 class="p-1 flex justify-center font-bold underline">INFORMATION</h2>
+        <div className="max-w-fit text-white relative top-2 p-2 flex flex-col items-center md:items-start">
+          <h2 className="p-1 flex justify-center font-bold underline">INFORMATION</h2>
           <div className="flex flex-col items-start max-w-fit">
-          <Link to="/" class="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < FaHome /> Home </Link>
-          <a class="p-1 flex justify-center gap-1 items-center hover:cursor-pointer hover:text-primary-foreground"> < HiMiniQuestionMarkCircle /> About us</a>
-          <Link to="/event" class="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < SlCalender /> Event</Link>
-          <Link to="/gallery" class="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < GrGallery /> Gallery</Link>
+          <Link to="/" className="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < FaHome /> Home </Link>
+          <a className="p-1 flex justify-center gap-1 items-center hover:cursor-pointer hover:text-primary-foreground"> < HiMiniQuestionMarkCircle /> About us</a>
+          <Link to="/events" className="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < SlCalender /> Events</Link>
+          <Link to="/gallery" className="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < GrGallery /> Gallery</Link>
           </div>
         </div>
 
 
         {/*third section*/}
-        <div class=" text-white relative top-2  p-2 ">
-          <h2 class="flex justify-center font-bold underline md:truncate">OTHER LINKS</h2>
-          <Link to="/contactus" class="p-1 flex justify-center gap-0.5 items-center md:truncate hover:text-primary-foreground"> < MdContacts /> Contact Us</Link>
+        <div className=" text-white relative top-2  p-2 ">
+          <h2 className="flex justify-center font-bold underline md:truncate">OTHER LINKS</h2>
+          <Link to="/contactus" className="p-1 flex justify-center gap-0.5 items-center md:truncate hover:text-primary-foreground"> < MdContacts /> Contact Us</Link>
         </div>
 
 
         {/*FOURTH SECTION */}
-        <div class="   text-white p-2 relative top-2 ">
-          <h2 class=" flex justify-center font-bold underline">FOLLOW US</h2>
-          <p class="flex justify-center gap-2 items-center p-3">
+        <div className="   text-white p-2 relative top-2 ">
+          <h2 className=" flex justify-center font-bold underline">FOLLOW US</h2>
+          <p className="flex justify-center gap-2 items-center p-3">
             <a href="https://www.linkedin.com/in/ieee-student-chapter-rgpv-335448307/">
               < FaLinkedin className="text-2xl hover:text-primary-foreground"/>
             </a>
@@ -83,9 +83,9 @@ function Footer() {
       </div>
 
       {/* Fifth Section */}
-      <div class="w-full h-1 bg-white"> </div>
+      <div className="w-full h-1 bg-white"> </div>
       <div className='bg-blue-950 flex justify-center'>
-      <div class="max-w-fit py-2 text-white  text-center flex flex-col gap-2 items-start md:flex-row md:gap-36 justify-center">
+      <div className="max-w-fit py-2 text-white  text-center flex flex-col gap-2 items-start md:flex-row md:gap-36 justify-center">
         <p>CopyRight © 2024</p>
         <p>All Rights are Reserved</p>
         <div>
