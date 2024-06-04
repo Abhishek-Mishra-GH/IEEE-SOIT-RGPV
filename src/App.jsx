@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Committee from "./pages/Committee"
-import Event from "./pages/Event"
+import Events from "./pages/Events"
 import ContactUs from "./pages/ContactUs"
 import Gallery from "./pages/Gallery"
 import Test from "./pages/Test"
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/test" element={ <Test/> } />
         <Route path="/" element={ <Home/> } />
-        <Route path="/event" element= { <Event/>} />
+        <Route path="/events" element= { <Events/>} />
         <Route path="/gallery" element={ <Gallery/> } />
         <Route path="/committee" element={ <Committee/> } />
         <Route path="/contactus" element={ <ContactUs />} />

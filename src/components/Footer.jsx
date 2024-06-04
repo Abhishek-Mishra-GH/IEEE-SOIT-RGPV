@@ -49,7 +49,7 @@ function Footer() {
           <div className="flex flex-col items-start max-w-fit">
           <Link to="/" className="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < FaHome /> Home </Link>
           <a className="p-1 flex justify-center gap-1 items-center hover:cursor-pointer hover:text-primary-foreground"> < HiMiniQuestionMarkCircle /> About us</a>
-          <Link to="/event" className="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < SlCalender /> Event</Link>
+          <Link to="/events" className="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < SlCalender /> Events</Link>
           <Link to="/gallery" className="p-1 flex justify-center gap-1 items-center hover:text-primary-foreground"> < GrGallery /> Gallery</Link>
           </div>
         </div>
