@@ -4,7 +4,7 @@ function ContactForm() {
   const [send, setSend] = useState(false)
 
   return (
-    <div className="grid justify-items-center mb-6 border z-0">
+    <div className="grid justify-items-center mb-6">
           <div className=" grid justify-items-center font-sans font-semibold">
             <h1 className="text-3xl">Get in touch</h1>
             <p className="text-base">
@@ -24,7 +24,7 @@ function ContactForm() {
                   </label>
                   <input
                     type="text"
-                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-400  drop-shadow-md"
+                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-2 border-solid  border-zinc-300 shadow-lg"
                     name="name"
                     id="name"
                     placeholder="Enter your name"
@@ -38,7 +38,7 @@ function ContactForm() {
                   </label>
                   <input
                     type="email"
-                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-400  drop-shadow-md"
+                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-300  shadow-lg"
                     id="email"
                     placeholder="Enter E-mail"
                     required
@@ -49,7 +49,7 @@ function ContactForm() {
                     MESSAGE *
                   </label>
                   <textarea
-                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-400   drop-shadow-md"
+                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-300   shadow-lg"
                     id="text"
                     placeholder="Your message for us"
                     required

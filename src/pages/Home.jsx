@@ -53,7 +53,10 @@ export default function Home() {
 
       <IEEE />
       <IEEEH/>
-      <ContactForm />
+      
+      <div className="w-full flex z-10 justify-center">
+       <ContactForm />
+      </div>
 
     </div>
   )
