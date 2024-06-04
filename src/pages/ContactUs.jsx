@@ -11,7 +11,7 @@ const operaatingMembers = [
     name: "Ananya Mishra",
     email: "Chairieeergpv@gmail.com",
     designation: "Chairperson",
-    icon: "./src/assets/Images/01.jpg",
+    icon: "../src/assets/Images/01.jpg",
   },
   {
     name: "Vedeka Gupta",
