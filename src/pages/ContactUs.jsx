@@ -4,60 +4,34 @@ import { loadSlim } from "@tsparticles/slim";
 import { CgProfile } from "react-icons/cg";
 import { IconContext } from "react-icons";
 import Navbar from "../components/Navbar";
+import { Outlet, Link } from "react-router-dom";
 
-// all details of the executive and operating members are stored in the array of objects. The details are then mapped to the respective components.
-
-const executiveMembers = [
-  {
-    name: "Dr. R. K. Singh",
-    email: "test123@gmail.com",
-    designation: "President",
-    icon: <CgProfile />,
-  },
-  {
-    name: "Dr. R. K. Singh",
-    email: "test123@gmail.com",
-    designation: "President",
-    icon: <CgProfile />,
-  },
-  {
-    name: "Dr. R. K. Singh",
-    email: "test123@gmail.com",
-    designation: "President",
-    icon: <CgProfile />,
-  },
-  {
-    name: "Dr. R. K. Singh",
-    email: "test123@gmail.com",
-    designation: "President",
-    icon: <CgProfile />,
-  },
-];
+// all details of the operating members are stored in the array of objects. The details are then mapped to the respective components.
 
 const operaatingMembers = [
   {
-    name: "Dr. R. K. Singh",
-    email: "test123@gmail.com",
-    designation: "President",
-    icon: <CgProfile />,
+    name: "Ananya Mishra",
+    email: "Chairieeergpv@gmail.com",
+    designation: "Chairperson",
+    icon: "./src/assets/Images/01.jpg",
   },
   {
-    name: "Dr. R. K. Singh",
-    email: "test123@gmail.com",
-    designation: "President",
-    icon: <CgProfile />,
+    name: "Vedeka Gupta",
+    email: "Vicechairpersonieeergpv@gmail.com",
+    designation: "Vice Chairperson",
+    icon: "./src/assets/Images/02.jpg",
   },
   {
-    name: "Dr. R. K. Singh",
-    email: "test123@gmail.com",
-    designation: "President",
-    icon: <CgProfile />,
+    name: "Rudresh Bharadwaj",
+    email: "Ieeesecretary05@gmail.com",
+    designation: "Secretary",
+    icon: "./src/assets/Images/04.jpg",
   },
   {
-    name: "Dr. R. K. Singh",
-    email: "test123@gmail.com",
-    designation: "President",
-    icon: <CgProfile />,
+    name: "Parth Parik",
+    email: "Ieeergpvtreasurer@gmail.com",
+    designation: "Treasurer",
+    icon: "./src/assets/Images/03.png",
   },
 ];
 const ContactUs = () => {
@@ -118,13 +92,16 @@ const ContactUs = () => {
   function executivemap(member) {
     return (
       <>
-        <div className="grid justify-items-center border-slate-200 rounded-xl p-4 border-4">
-          <IconContext.Provider value={{ color: "rgb(0 34 80)", size: "4em" }}>
+        <div className="grid justify-items-center border-stone-950 rounded-xl p-4 border-2 hover:shadow-2xl">
+          {/* <IconContext.Provider value={{ color: "rgb(0 34 80)", size: "4em" }}>
             <div>{member.icon}</div>
-          </IconContext.Provider>
-          <h1 className="text-2xl mt-3">{member.designation}</h1>
-          <p className="text-lg">{member.name} </p>
-          <p className="text-lg">{member.email} </p>
+          </IconContext.Provider> */}
+          <img src={member.icon} alt="Image" className="h-64 rounded-md hover:scale-110 ease-in-out duration-300 text-primary-background"/>
+          <h1 className="text-2xl mt-3 mb-3">{member.name} </h1>
+          <p className="text-lg mb-3">{member.designation}</p>
+        
+          <Link to="mailto:{member.email}" className="text-sm">{member.email}</Link>
+          
         </div>
       </>
     );
@@ -149,17 +126,8 @@ const ContactUs = () => {
         {/* Committee Members Contact Details */}
 
         <div>
-          <div className="grid justify-items-center font-semibold text-xl">
-            <h1 className="text-3xl">EXECUTIVE COMMITTEE</h1>
-            <div>
-              <div className="justify-items-center mt-16 mb-10 flex flex-row gap-x-8 flex-wrap justify-around gap-4">
-                {executiveMembers.map(executivemap)}
-              </div>
-            </div>
-          </div>
-
           <div className="grid justify-items-center font-semibold text-xl mt-11 mb-11">
-            <h1 className="text-3xl">OPERATING COMMITTEE</h1>
+            <h1 className="text-3xl">OPERATION HEADS</h1>
             <div>
               <div className="justify-items-center mt-16 mb-10 flex flex-row gap-x-8 flex-wrap justify-around gap-4">
                 {operaatingMembers.map(executivemap)}
@@ -190,7 +158,7 @@ const ContactUs = () => {
                   </label>
                   <input
                     type="text"
-                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-400  drop-shadow-md"
+                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-400  drop-shadow-md hover:shadow-2xl"
                     name="name"
                     id="name"
                     placeholder="Enter your name"
@@ -204,7 +172,7 @@ const ContactUs = () => {
                   </label>
                   <input
                     type="email"
-                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-400  drop-shadow-md"
+                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-400  drop-shadow-md hover:shadow-2xl"
                     id="email"
                     placeholder="Enter E-mail"
                     required
@@ -215,7 +183,7 @@ const ContactUs = () => {
                     MESSAGE *
                   </label>
                   <textarea
-                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-400   drop-shadow-md"
+                    className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-400   drop-shadow-md hover:shadow-2xl"
                     id="text"
                     placeholder="Your message for us"
                     required
@@ -224,7 +192,7 @@ const ContactUs = () => {
 
                 <div className="flex justify-center">
                   <button
-                    className="rounded-md border-solid border-2 border-zinc-500 pl-2 pr-2 bg-primary-background text-white w-28 text-lg"
+                    className="rounded-md border-solid border-2 border-zinc-500 pl-2 pr-2 bg-primary-background text-white w-28 text-lg hover:shadow-2xl"
                     type="submit"
                     onClick={() => setSend(true)}
                   >
