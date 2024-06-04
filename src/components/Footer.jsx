@@ -82,11 +82,11 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-full h-1 bg-white"> </div>
+      <div className="w-full h-0.5 bg-gray-300"> </div>
 
       {/* Fifth Section */}
-      <div className='bg-blue-950 flex flex-col items-center md:flex-row md:justify-between py-4 px-8 text-white'>
-        <div className="text-xs md:text-base my-2">
+      <div className='bg-blue-950 flex flex-col items-center md:flex-row md:justify-between p-4 md:py-2 md:px-6 text-white'>
+        <div className="text-xs md:text-base my-2 md:my-0">
           <p> © Copyright 2024 IEEE RGPV - All rights reserved.</p>
         </div>
         <div className="flex flex-col items-center gap-2 md:flex-row"> 
