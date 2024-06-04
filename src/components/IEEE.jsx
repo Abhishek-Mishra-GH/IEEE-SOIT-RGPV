@@ -29,12 +29,16 @@ export default function IEEE() {
             </div>
             
             {/* Quote */}
-            <div className="h-60 bg-primary-background text-white kalam">
-                <p>
+            <div className="bg-primary-background text-white px-6 py-8">
+                <div className="flex justify-center">
+                <p className="font-kalam text-left text-3xl md:max-w-[70vw] text leading-loose">
                 “Technology is best when it brings people together. IEEE embodies this principle by uniting professionals across the globe, driving progress through innovation and collaboration, and ultimately improving the quality of life for all humanity.”
                 </p>
-                <p>
-                    
+                </div>
+                <br />
+                <br />
+                <p className="text-right text-xl mr-6">
+                ~ Matt Mullenweg
                 </p>
             </div>
 
