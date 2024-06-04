@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 function App() {
 
   return (
-    <>
+    <div className="font-inter font-normal">
       <Routes>
         <Route path="/test" element={ <Test/> } />
         <Route path="/" element={ <Home/> } />
@@ -22,7 +22,7 @@ function App() {
 
       {/* Footer */}
       <Footer />
-    </>
+    </div>
   )
 }
 

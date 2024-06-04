@@ -3,8 +3,9 @@ import IEEELogo from "../assets/ieee-logo-lg.svg"
 
 export default function IEEE() {
     return (
-        <div className="md:px-4 py-8">
-            <div className="w-full">
+        <div className="w-full">
+            {/* About > what is ieee */}
+            <div className="w-full md:px-4 py-8">
                 <h1 className="text-5xl text-center my-8">ABOUT US</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 md:m-4">
                     {/* IEEE logo */}
@@ -26,6 +27,17 @@ export default function IEEE() {
                     </div>
                 </div>
             </div>
+            
+            {/* Quote */}
+            <div className="h-60 bg-primary-background text-white kalam">
+                <p>
+                “Technology is best when it brings people together. IEEE embodies this principle by uniting professionals across the globe, driving progress through innovation and collaboration, and ultimately improving the quality of life for all humanity.”
+                </p>
+                <p>
+                    
+                </p>
+            </div>
+
         </div>
     )
 }
