@@ -16,7 +16,7 @@ export default function IEEE() {
                         <div className="md:max-w-[45vw]">
                         <h3 className="text-3xl font-medium my-2">What is IEEE?</h3>
                         <p className="text-2xl">
-                            IEEE SoIT RGPV is a student chapter of RGPV, It is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. As a student chapter at SoIT RGPV, our mission is to ignite our passions, foster a sense of community, and provide enriching experiences.
+                            IEEE RGPV is a student chapter of RGPV, It is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. As a student chapter at RGPV, our mission is to ignite our passions, foster a sense of community, and provide enriching experiences.
                             <br />
                             <br />
                             Through our diverse activities and collaborative environment, we strive to create a space where students can grow both academically and professionally, preparing them to become future leaders in technology and engineering.
