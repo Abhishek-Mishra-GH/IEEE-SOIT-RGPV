@@ -1,10 +1,8 @@
 import React, { useState, useMemo, useEffect } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { CgProfile } from "react-icons/cg";
-import { IconContext } from "react-icons";
 import Navbar from "../components/Navbar";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // all details of the operating members are stored in the array of objects. The details are then mapped to the respective components.
 
@@ -93,13 +91,9 @@ const ContactUs = () => {
     return (
       <>
         <div className="grid justify-items-center border-stone-950 rounded-xl p-4 border-2 hover:shadow-2xl">
-          {/* <IconContext.Provider value={{ color: "rgb(0 34 80)", size: "4em" }}>
-            <div>{member.icon}</div>
-          </IconContext.Provider> */}
           <img src={member.icon} alt="Image" className="h-64 rounded-md hover:scale-110 ease-in-out duration-300 text-primary-background"/>
           <h1 className="text-2xl mt-3 mb-3">{member.name} </h1>
           <p className="text-lg mb-3">{member.designation}</p>
-        
           <Link to="mailto:{member.email}" className="text-sm">{member.email}</Link>
           
         </div>
