@@ -30,7 +30,7 @@ export default function IEEE() {
             
             {/* Quote */}
             <div className="bg-primary-background text-white px-6 py-8">
-                <div className="flex justify-center">
+                <div className="flex justify-center md:mt-4">
                 <p className="font-kalam text-left text-3xl md:max-w-[70vw] text leading-loose">
                 “Technology is best when it brings people together. IEEE embodies this principle by uniting professionals across the globe, driving progress through innovation and collaboration, and ultimately improving the quality of life for all humanity.”
                 </p>
