@@ -31,12 +31,14 @@ function Navbar() {
         <CustomNavLink to="/committee"> Committee </CustomNavLink>
         <CustomNavLink to="/event"> Event </CustomNavLink>
         <CustomNavLink to="/gallery"> Gallery </CustomNavLink>
+
+        <CustomNavLink to="/contactus" className="border px-4 py-1 rounded-full hover:border-primary-foreground">Contact Us</CustomNavLink>
       </div>
 
       {/* right nav */}
-      <div className="hidden h-full sm:flex text-lg items-center text-white">
-        <CustomNavLink to="/contactus" className="border px-4 py-1 rounded-full hover:border-primary-foreground">Contact Us</CustomNavLink>
-      </div>
+      {/* <div className="hidden h-full sm:flex text-lg items-center text-white">
+        
+      </div> */}
 
       {/* mobile menu */}
       <div
