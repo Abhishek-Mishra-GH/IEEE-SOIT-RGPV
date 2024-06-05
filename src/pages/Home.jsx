@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import IEEE from "../components/IEEE";
 import IEEEH from '../components/IEEEH';
 import ContactForm from "../components/ContactForm";
+import IEEEBenifit from '../components/IEEEBenifit';
+
 export default function Home() {
 
   const [isAtTop, setIsAtTop] = useState(false);
@@ -53,6 +55,7 @@ export default function Home() {
 
       <IEEE />
       <IEEEH/>
+      <IEEEBenifit />
       
       <div className="w-full flex z-10 justify-center">
        <ContactForm />

@@ -1,6 +1,3 @@
-import React, { useState, useMemo, useEffect } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
 import { CgProfile } from "react-icons/cg";
 import { IconContext } from "react-icons";
 import Navbar from "../components/Navbar";
