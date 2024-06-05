@@ -32,7 +32,7 @@ function Events() {
           events={events}
           startAccessor="start"
           endAccessor="end"
-          style={{ height: 500 }}
+          style={{ height: 450 }}
         />
       </div>
     </>
