@@ -26,7 +26,7 @@ function Events() {
       <Navbar />
       <Particle name="EVENT" />
       <div className="flex flex-col items-center justify-center mb-12">
-        <h1 className="text-3xl pb-8 font-semibold">Event Calender</h1>
+        <h1 className="text-3xl pb-8 font-semibold">Event Calendar</h1>
         <Calendar
           localizer={localizer}
           events={events}
