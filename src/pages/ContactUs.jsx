@@ -38,8 +38,8 @@ const ContactUs = () => {
   function executivemap(member) {
     return (
       <>
-        <div className="grid justify-items-center border-stone-950 rounded-xl p-4 border-2 hover:shadow-2xl w-72 ">
-          <IconContext.Provider value={{ color: "rgb(0 34 80)", size: "4em" }}>
+        <div className="grid justify-items-center border-stone-950 rounded-xl p-4 border-0 hover:shadow-2xl w-72 ">
+          <IconContext.Provider value={{ color: "rgb(128 128 128)", size: "4em" }}>
             <div>{member.icon}</div>
           </IconContext.Provider>
 
@@ -47,7 +47,7 @@ const ContactUs = () => {
           <p className="text-lg mb-3">{member.designation}</p>
           <Link
             to={`mailto:${member.email}`}
-            className="text-sm underline underline-offset-8"
+            className="text-sm  underline-offset-8"
           >
             {member.email}
           </Link>
