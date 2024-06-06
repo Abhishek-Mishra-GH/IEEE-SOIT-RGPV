@@ -1,8 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Particle from "../components/particle";
-import DrJitendraAgrawal from "../components/ExecutiveCom";
-
 export default function Committee() {
   return (
     <>
@@ -17,7 +15,7 @@ export default function Committee() {
           <div>{/* Dr.jitendra agarwal sir info   */}</div>
 
           <div>
-            <DrJitendraAgrawal />
+
           </div>
         </div>
 
