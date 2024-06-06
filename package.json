@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.19",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.4.0",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.11",
     "framer-motion": "^11.2.10",
+    "material-ui-popup-state": "^5.1.2",
     "react": "^18.2.0",
     "react-big-calendar": "^1.12.2",
     "react-dom": "^18.2.0",
