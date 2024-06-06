@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Particle from "../components/particle";
+import DrSanjeevSharma from "../components/ExecutiveComm";
+import DrJitendraAgrawal from "../components/ExecutiveCom"
 export default function Committee() {
   return (
     <>
@@ -12,10 +14,11 @@ export default function Committee() {
             {"Executive Committee".toUpperCase()}
           </h1>
 
-          <div>{/* Dr.jitendra agarwal sir info   */}</div>
+          <div>{/* Dr.jitendra agarwal sir info   */}
+          <DrJitendraAgrawal/></div>
 
           <div>
-
+            <DrSanjeevSharma />
           </div>
         </div>
 
