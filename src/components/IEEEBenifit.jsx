@@ -3,9 +3,11 @@ import React from 'react'
 function Benefits() {
     return (
         <>
-            <div className="p-4 flex flex-col gap-6">
-                <h1 className='text-center text-3xl'>
+            <div className="p-4 flex flex-col gap-6 items-center">
+                <h1 className='text-center text-3xl flex flex-col items-center justify-center '>
                     Benefits of IEEE
+                    <br />
+                    <div className="h-1 w-[95%] border bg-black my-1"></div>
                 </h1>
                 {/* point 1 */}
                 <div className='flex gap-0 flex-col md:flex-row items-center'>
@@ -22,7 +24,7 @@ function Benefits() {
                 {/* point 2 */}
                 <div className='flex gap-0 justify-center flex-col md:flex-row items-center'>
                     <p className='text-justify p-2 max-w-xl hidden md:block'>
-                        These events provide platforms for research presentation, learning, and networking.
+                    Participants stay updated with the latest advancements and benefit from numerous career development resources, including webinars, workshops, and conferences.
                     </p>
                     <div className='text-center font-bold flex justify-center items-center px-10 md:px-52 '>
                         <h1 className='w-64 flex items-center justify-center text-xl border-2 border-black border-dashed font-serif px-3 rounded-2xl md:px-16 py-4'>
@@ -30,7 +32,7 @@ function Benefits() {
                         </h1>
                     </div>
                     <p className='text-justify p-2 max-w-xl md:hidden block'>
-                        These events provide platforms for research presentation, learning, and networking.
+                    Participants stay updated with the latest advancements and benefit from numerous career development resources, including webinars, workshops, and conferences.
                     </p>
                 </div>
 
@@ -51,7 +53,7 @@ function Benefits() {
                 {/* point 4 */}
                 <div className='flex gap-0 justify-center flex-col md:flex-row items-center'>
                     <p className='text-justify p-2 max-w-xl hidden md:block'>
-                    Participants stay updated with the latest advancements and benefit from numerous career development resources, including webinars, workshops, and conferences.
+                    These events provide platforms for research presentation, learning, and networking.
                     </p>
                     <div className='text-center font-bold flex justify-center items-center px-10 md:px-52 '>
                         <h1 className='w-64 flex items-center justify-center text-xl border-2 border-black border-dashed font-serif px-3 rounded-2xl md:px-16 py-4'>
@@ -59,7 +61,7 @@ function Benefits() {
                         </h1>
                     </div>
                     <p className='text-justify p-2 max-w-xl md:hidden block'>
-                    Participants stay updated with the latest advancements and benefit from numerous career development resources, including webinars, workshops, and conferences.
+                    These events provide platforms for research presentation, learning, and networking.
                     </p>
                 </div>
 

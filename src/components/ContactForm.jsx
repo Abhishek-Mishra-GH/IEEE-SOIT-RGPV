@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 function ContactForm() {
-  const [send, setSend] = useState(false)
+  const [send, setSend] = useState(false);
 
   return (
     <div className="grid justify-items-center m-6">

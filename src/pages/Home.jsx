@@ -6,33 +6,34 @@ import IEEE from "../components/IEEE";
 import IEEEH from '../components/IEEEH';
 import ContactForm from "../components/ContactForm";
 import IEEEBenifit from '../components/IEEEBenifit';
+import GetInTouch from "../components/GetInTouch";
 
 export default function Home() {
 
   const [isAtTop, setIsAtTop] = useState(false);
 
   useEffect(() => {
-   const handleScroll = () => {
-    const scrollTop = window.scrollY
-    const navElement = document.getElementById('animateNav')
+    const handleScroll = () => {
+      const scrollTop = window.scrollY
+      const navElement = document.getElementById('animateNav')
 
-    if(navElement) {
-      const offSetTop = navElement.getBoundingClientRect().top + scrollTop
-      if(scrollTop >= offSetTop) {
-        setIsAtTop(true)
-      } else {
-        setIsAtTop(false)
+      if (navElement) {
+        const offSetTop = navElement.getBoundingClientRect().top + scrollTop
+        if (scrollTop >= offSetTop) {
+          setIsAtTop(true)
+        } else {
+          setIsAtTop(false)
+        }
       }
     }
-   }
-  
-   window.addEventListener('scroll', handleScroll)
 
-   handleScroll()
+    window.addEventListener('scroll', handleScroll)
 
-   return () => {
-    window.removeEventListener('scroll', handleScroll)
-   }
+    handleScroll()
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
 
   }, [])
 
@@ -40,13 +41,13 @@ export default function Home() {
     // wrapper div
     <div>
       <div className='border-4 flex h-screen '>
-        <HomeIntro/>
+        <HomeIntro />
       </div>
-      <motion.div 
-        id='animateNav' 
-        initial={{opacity: 0}} 
-        animate={{opacity: isAtTop ? 1 : 0}}
-        transition={{duration: 0.6, ease: 'easeInOut'}}
+      <motion.div
+        id='animateNav'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isAtTop ? 1 : 0 }}
+        transition={{ duration: 0.6, ease: 'easeInOut' }}
         className="sticky top-0">
 
         <Navbar />
@@ -54,12 +55,9 @@ export default function Home() {
       </motion.div>
 
       <IEEE />
-      <IEEEH/>
+      <IEEEH />
       <IEEEBenifit />
-      
-      <div className="w-full flex z-10 justify-center">
-       <ContactForm />
-      </div>
+      <GetInTouch />
 
     </div>
   )
