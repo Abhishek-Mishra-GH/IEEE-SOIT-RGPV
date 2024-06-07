@@ -1,21 +1,26 @@
 import React from "react";
-
+import image from "../assets/sanjeevsir.jpg"
 const DrSanjeevSharma = () => {
   return (
     <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 bg-white  rounded-lg">
       <div className="flex justify-center">
-        <img
-          src="https://media.licdn.com/dms/image/C5603AQHbcnLocnjYmw/profile-displayphoto-shrink_800_800/0/1595482152054?e=1723075200&v=beta&t=t7h0kiU6v0fwQJ3JPm1bKkagVSWKtoo_5JG9636FIok"
-          className="h-72 mb-10 mt-16 rounded-lg "
-          alt="img"
-        />
+
+        <img src={image} className="h-72 mb-10 mt-16 rounded-lg " alt="img" />
       </div>
       <h1
-        className="text-xl sm:text-3xl lg:text-4xl font-bold text-center mb-4 sm:mb-10"
+        className="text-xl sm:text-3xl lg:text-4xl font-bold text-center "
         style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }}
       >
         Dr. Sanjeev Sharma - Mentor
       </h1>
+      <p
+        style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }}
+        className=" font-bold text-center mb-1 sm:mb-10"
+      >
+        {" "}
+        Professor at School of Information Technology, Rajiv Gandhi Prodyougiki
+        Vishwavidyalaya
+      </p>
 
       <section className="mb-4 sm:mb-6">
         <h2

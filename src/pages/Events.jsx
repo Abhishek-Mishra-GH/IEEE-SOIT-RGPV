@@ -32,7 +32,8 @@ function Events() {
           events={events}
           startAccessor="start"
           endAccessor="end"
-          style={{ height: 450 }}
+          className="rbc-calendar"
+          style={{fontFamily: "Poppins, sans-serif", height: 450}}
         />
       </div>
     </>

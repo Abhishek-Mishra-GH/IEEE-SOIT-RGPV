@@ -11,11 +11,12 @@ const DrJitendraAgrawal = () => {
         />
       </div>
       <h1
-        className="text-xl sm:text-3xl lg:text-4xl font-bold text-center mb-4 sm:mb-10"
+        className="text-xl sm:text-3xl lg:text-4xl font-bold text-center"
         style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }}
       >
         Dr. Jitendra Agrawal- Counselor
       </h1>
+      <p style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }} className=" font-bold text-center mb-1 sm:mb-10">Associate Professor at School of Information Technology, Rajiv Gandhi Prodyougiki Vishwavidyalaya</p>
 
       <section className="mb-4 sm:mb-6">
         <h2
