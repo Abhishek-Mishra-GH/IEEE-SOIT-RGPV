@@ -1,4 +1,5 @@
-import { CgProfile } from "react-icons/cg";
+import { IoMdPerson } from "react-icons/io";
+import GetInTouch from "../components/GetInTouch";
 import { IconContext } from "react-icons";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
@@ -12,35 +13,34 @@ const operaatingMembers = [
     name: "Ananya Mishra",
     email: "Chairieeergpv@gmail.com",
     designation: "Chairperson",
-    icon: <CgProfile />,
+    icon: <IoMdPerson />,
   },
   {
     name: "Vedeka Gupta",
     email: "Vicechairpersonieeergpv@gmail.com",
     designation: "Vice Chairperson",
-    icon: <CgProfile />,
+    icon: <IoMdPerson />,
   },
   {
     name: "Rudresh Bharadwaj",
     email: "Ieeesecretary05@gmail.com",
     designation: "Secretary",
-    icon: <CgProfile />,
+    icon: <IoMdPerson />,
   },
   {
     name: "Parth Parik",
     email: "Ieeergpvtreasurer@gmail.com",
     designation: "Treasurer",
-    icon: <CgProfile />,
+    icon: <IoMdPerson />,
   },
 ];
 const ContactUs = () => {
-
   function executivemap(member) {
     return (
       <>
         <div className="grid justify-items-center border-stone-950 rounded-xl p-4 border-0 hover:shadow-2xl w-72 ">
-          <IconContext.Provider value={{ color: "rgb(128 128 128)", size: "4em" }}>
-            <div>{member.icon}</div>
+          <IconContext.Provider value={{ color: "#2f699e", size: "4em" }}>
+            <div>{<IoMdPerson />}</div>
           </IconContext.Provider>
 
           <h1 className="text-2xl mt-3 mb-3">{member.name} </h1>
@@ -75,8 +75,7 @@ const ContactUs = () => {
         </div>
 
         {/* contact us form  */}
-
-        <ContactForm />
+        <GetInTouch />
       </div>
     </>
   );
