@@ -7,15 +7,14 @@ export default function Committee() {
   return (
     <>
       <Navbar />
-      <Particle name="COMMITTEE" />
       <div>
         <div>
-          <h1 className="text-4xl text-center font-semibold">
+          <h1 className="text-4xl text-center font-semibold mt-6">
             {"Executive Committee".toUpperCase()}
           </h1>
 
           <div>{/* Dr.jitendra agarwal sir info   */}
-          <DrJitendraAgrawal/></div>
+            <DrJitendraAgrawal /></div>
 
           <div>
             <DrSanjeevSharma />

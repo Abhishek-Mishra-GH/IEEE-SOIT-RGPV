@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { CgClose } from "react-icons/cg";
 import { motion } from 'framer-motion'
+import CommitteeNavDD from "./CommitteeNavDD"
 
 function CustomNavLink({ children, to, className="" }) {
   return (
@@ -28,7 +29,7 @@ function Navbar() {
       {/* middle nav */}
       <div className="hidden h-full sm:flex gap-12 text-lg items-center text-white">
         <CustomNavLink to="/"> Home </CustomNavLink>
-        <CustomNavLink to="/committee"> Committee </CustomNavLink>
+        <CommitteeNavDD /> 
         <CustomNavLink to="/events"> Events </CustomNavLink>
         <CustomNavLink to="/gallery"> Gallery </CustomNavLink>
 
