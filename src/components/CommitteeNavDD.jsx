@@ -20,7 +20,7 @@ export default function CommitteeNavDD() {
                 initial={{ height: 0 }}
                 animate={{ height: dropdown ? "auto" : 0, opacity: dropdown ? 1 : 0 }}
                 transition={{ duration: 0.4 }}
-                className="absolute flex flex-col gap-2 top-[3.5rem] bg-primary-background rounded-lg py-4 px-2 w-full">
+                className="absolute flex flex-col gap-2 top-[3.5rem] bg-primary-background rounded-lg py-4 px-[0.6rem] w-[105%]">
 
                 <CustomNavLink to="/executivecommittee"> 
                     Executive  

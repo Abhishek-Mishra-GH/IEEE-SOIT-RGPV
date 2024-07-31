@@ -8,17 +8,11 @@ export default function Committee() {
     <>
       <Navbar />
       <div>
+        
         <div>
           <h1 className="text-4xl text-center font-semibold mt-6">
             {"Executive Committee".toUpperCase()}
           </h1>
-
-          <div>{/* Dr.jitendra agarwal sir info   */}
-            <DrJitendraAgrawal /></div>
-
-          <div>
-            <DrSanjeevSharma />
-          </div>
         </div>
 
         {/* In above section information about the Executive committee members is displayed */}

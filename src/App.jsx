@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
-import Committee from "./pages/Committee"
 import Events from "./pages/Events"
 import ContactUs from "./pages/ContactUs"
 import Gallery from "./pages/Gallery"
 import Test from "./pages/Test"
 import Footer from "./components/Footer"
+import ExecutiveCommittee from "./pages/ExecutiveCom"
 
 function App() {
 
@@ -16,8 +16,8 @@ function App() {
         <Route path="/" element={ <Home/> } />
         <Route path="/events" element= { <Events/>} />
         <Route path="/gallery" element={ <Gallery/> } />
-        <Route path="/executivecommittee" element={ <Committee/> } />
-        <Route path="/operatingcommittee" element={ <Committee/> } />
+        <Route path="/executivecommittee" element={ <ExecutiveCommittee/> } />
+        <Route path="/operatingcommittee" element={ <ExecutiveCommittee/> } />
         <Route path="/contactus" element={ <ContactUs />} />
       </Routes>
 
