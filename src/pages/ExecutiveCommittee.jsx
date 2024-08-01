@@ -105,7 +105,25 @@ const ExecutiveCommittee = () => {
 
       {/* Mentor */}
       <div className="flex flex-col-reverse sm:flex-row p-6">
+
         {/* left section */}
+
+        <div className="flex flex-col items-center gap-4 p-4 max-h-[calc(100vh-10rem)]">
+          <div className="flex justify-center">
+            <img src={mentorImg} className="h-72 rounded-lg " alt="img" />
+          </div>
+          <div className="w-[75%]">
+            <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold" style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }}>
+              Dr. Sanjeev Sharma - Mentor
+            </h1>
+            <p style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }} className=" font-bold mb-1 sm:mb-10">
+              Professor at School of Information Technology, Rajiv Gandhi Prodyougiki
+              Vishwavidyalaya
+            </p>
+          </div>
+        </div>
+
+        {/* right section */}
         <div className="sm:w-1/2 max-h-full p-4">
           <div className={clsx("overflow-hidden", !readingMoreS2 && "h-[23.8rem]")}>
             <section className="mb-4 sm:mb-6">
@@ -301,23 +319,6 @@ const ExecutiveCommittee = () => {
             Read {!readingMoreS2 ? "More" : "Less"}
           </button>
 
-        </div>
-
-        {/* right section */}
-
-        <div className="flex flex-col items-center gap-4 p-4 max-h-[calc(100vh-10rem)]">
-          <div className="flex justify-center">
-            <img src={mentorImg} className="h-72 rounded-lg " alt="img" />
-          </div>
-          <div className="w-[75%]">
-            <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold" style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }}>
-              Dr. Sanjeev Sharma - Mentor
-            </h1>
-            <p style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }} className=" font-bold mb-1 sm:mb-10">
-              Professor at School of Information Technology, Rajiv Gandhi Prodyougiki
-              Vishwavidyalaya
-            </p>
-          </div>
         </div>
       </div>
     </>

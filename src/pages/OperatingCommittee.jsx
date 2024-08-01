@@ -158,7 +158,7 @@ export default function OperatingCommittee() {
 
                 {/* Operations head */}
                 <div>
-                    <h1 className="text-4xl text-center font-semibold pt-8 pb-6 px-6">OPERDATIONS HEAD</h1>
+                    <h1 className="text-4xl text-center font-semibold pt-8 pb-6 px-6">OPERATIONS HEAD</h1>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
                         {operationsHead.map((member, index) => <MemberCard key={index} {...member} />)}
                     </div>

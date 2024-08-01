@@ -21,22 +21,21 @@ export default function CommitteeNavDD() {
                     height: 0,
                     padding: "0 0 0 0",
                     display: "none",
-                    opacity: 0,
-                }}
+                    opacity: 0,                }}
                 animate={{
-                    height: dropdown ? "auto" : 0, 
-                    padding: dropdown ? "1rem 0.6rem" : "0 0 0 0",
-                    display: dropdown ? "block" : "none",
+                    height: dropdown ? "5.2rem" : 0, 
+                    padding: dropdown ? "0.9rem 0.6rem" : "0 0 0 0",
+                    display: dropdown ? "flex" : "none",
                     opacity: dropdown ? 1 : 0,
                 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="absolute flex flex-col gap-2 top-[3.5rem] bg-primary-background rounded-lg w-[105%] ">
+                className="absolute flex flex-col justify-around top-[3.5rem] right-0 bg-primary-background rounded-lg text-base min-w-[12rem] border-2 border-green-700">
 
                 <CustomNavLink to="/executivecommittee"> 
-                    Executive  
+                    Executive Committee 
                 </CustomNavLink>
                 <CustomNavLink to="/operatingcommittee">   
-                    Operating 
+                    Operating Committee
                 </CustomNavLink>
             </motion.div>
         </div>
