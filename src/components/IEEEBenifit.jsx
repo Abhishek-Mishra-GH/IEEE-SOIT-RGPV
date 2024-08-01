@@ -1,85 +1,82 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function Benefits() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const benefits = [
+        {
+            title: 'CONNECTION',
+            description: 'IEEE offers outstanding opportunities to connect with over 400,000 professionals, enhancing your career through collaboration and knowledge sharing.'
+        },
+        {
+            title: 'NETWORKING',
+            description: 'Participants stay updated with the latest advancements and benefit from numerous career development resources, including webinars, workshops, and conferences.'
+        },
+        {
+            title: 'GROWTH',
+            description: 'Whether you are a student or an experienced engineer, IEEE supports your professional growth and connects you with a global community to help achieve your career goals.'
+        },
+        {
+            title: 'EVENTS',
+            description: 'These events provide platforms for research presentation, learning, and networking.'
+        },
+        {
+            title: 'Leadership',
+            description: 'Involvement also enhances your professional profile and opens up leadership and volunteering opportunities, allowing you to make a positive impact on society.'
+        }
+    ];
+
+
+   
+
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : benefits.length - 1));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex < benefits.length - 1 ? prevIndex + 1 : 0));
+        
+    };
+
     return (
-        <>
-            <div className="p-4 flex flex-col gap-6 items-center">
-                <h1 className='text-center text-3xl flex flex-col items-center justify-center '>
-                    Benefits of IEEE
-                    <br />
-                    <div className="h-1 w-[95%] border bg-black my-1"></div>
-                </h1>
-                {/* point 1 */}
-                <div className='flex gap-0 flex-col md:flex-row items-center'>
-                    <div className='text-center font-bold flex justify-center items-center px-10 md:px-52 '>
-                        <h1 className='w-64 flex items-center justify-center text-xl border-2 border-black border-dashed font-serif px-3 rounded-2xl md:px-16 py-4'>
-                            CONNECTION
-                        </h1>
-                    </div>
-                    <p className='text-justify p-2 max-w-xl'>
-                        IEEE offers outstanding opportunities to connect with over 400,000 professionals, enhancing your career through collaboration and knowledge sharing.
-                    </p>
+        <div className="relative p-4">
+            <h1 className='text-center text-3xl mb-4'>
+                Benefits of IEEE
+                <br />
+                <div className="h-1 w-[95%] border bg-black my-1 mx-auto"></div>
+            </h1>
+
+            <div className="relative overflow-hidden">
+                <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                    {benefits.map((benefit, index) => (
+                        <div key={index} className="flex-none w-full flex flex-col md:flex-col items-center p-6">
+                            <div className='text-center font-bold flex justify-center items-center px-10 md:px-52'>
+                                <h1 className='w-64 flex items-center justify-center text-xl border-2 border-black border-dashed font-serif px-3 rounded-2xl md:px-16 py-4'>
+                                    {benefit.title}
+                                </h1>
+                            </div>
+                            <p className='md:text-2xl text-justify p-2 max-w-xl'>
+                                {benefit.description}
+                            </p>
+                        </div>
+                    ))}
                 </div>
 
-                {/* point 2 */}
-                <div className='flex gap-0 justify-center flex-col md:flex-row items-center'>
-                    <p className='text-justify p-2 max-w-xl hidden md:block'>
-                    Participants stay updated with the latest advancements and benefit from numerous career development resources, including webinars, workshops, and conferences.
-                    </p>
-                    <div className='text-center font-bold flex justify-center items-center px-10 md:px-52 '>
-                        <h1 className='w-64 flex items-center justify-center text-xl border-2 border-black border-dashed font-serif px-3 rounded-2xl md:px-16 py-4'>
-                            NETWORKING
-                        </h1>
-                    </div>
-                    <p className='text-justify p-2 max-w-xl md:hidden block'>
-                    Participants stay updated with the latest advancements and benefit from numerous career development resources, including webinars, workshops, and conferences.
-                    </p>
-                </div>
-
-                {/* point 3 */}
-                <div className='flex gap-0 flex-col md:flex-row items-center'>
-                    <div className='text-center font-bold flex justify-center items-center px-10 md:px-52 '>
-                        <h1 className='w-64 flex items-center justify-center text-xl border-2 border-black border-dashed font-serif px-3 rounded-2xl md:px-16 py-4'>
-                            GROWTH
-                        </h1>
-                    </div>
-                    <p className='text-justify p-2 max-w-xl'>
-                        Whether you are a student or an experienced engineer, IEEE supports your
-                        professional growth and connects you with a global community to help achieve
-                        your career goals.
-                    </p>
-                </div>
-
-                {/* point 4 */}
-                <div className='flex gap-0 justify-center flex-col md:flex-row items-center'>
-                    <p className='text-justify p-2 max-w-xl hidden md:block'>
-                    These events provide platforms for research presentation, learning, and networking.
-                    </p>
-                    <div className='text-center font-bold flex justify-center items-center px-10 md:px-52 '>
-                        <h1 className='w-64 flex items-center justify-center text-xl border-2 border-black border-dashed font-serif px-3 rounded-2xl md:px-16 py-4'>
-                        EVENTS
-                        </h1>
-                    </div>
-                    <p className='text-justify p-2 max-w-xl md:hidden block'>
-                    These events provide platforms for research presentation, learning, and networking.
-                    </p>
-                </div>
-
-
-                {/* point 5 */}
-                <div className='flex gap-0 flex-col md:flex-row items-center'>
-                    <div className='text-center font-bold flex justify-center items-center px-10 md:px-52 '>
-                        <h1 className='w-64 flex items-center justify-center text-xl border-2 border-black border-dashed font-serif px-3 rounded-2xl md:px-16 py-4'>
-                            Leadership
-                        </h1>
-                    </div>
-                    <p className='text-justify p-2 max-w-xl'>
-                        Involvement also enhances your professional profile and opens up leadership and volunteering opportunities, allowing you to make a positive impact on society.
-                    </p>
-                </div>
-
+                <button
+                    onClick={handlePrev}
+                    className="h-28 w-10 absolute top-1/2 left-2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-gray-700"
+                >
+                    &lt;
+                </button>
+                <button
+                    onClick={handleNext}
+                    className="h-28 w-10 absolute top-1/2 right-2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-gray-700"
+                >
+                    &gt;
+                </button>
             </div>
-        </>
+        </div>
     )
 }
-export default Benefits
+
+
+export default Benefits;
