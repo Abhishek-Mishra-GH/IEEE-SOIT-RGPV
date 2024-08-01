@@ -54,35 +54,35 @@ export default function OperatingCommittee() {
         ...councilMembers,
         {
             name: "Dhruv Jain",
-            position: "Operations Head",
+            position: "finance coordinator",
             email: "dhruv.jain1615@gmail.com",
             linkedin: "#",
             imgPath: Dhruv
         },
         {
             name: "Nandini Tiwari",
-            position: "Operations Head",
+            position: "client relations head",
             email: "nandinitiwari2209@gmail.com",
             linkedin: "#",
             imgPath: Nandini
         },
         {
             name: "Suryansh Dubey",
-            position: "Operations Head",
+            position: "Tech Master",
             email: "dubeysuryansh1603@gmail.com",
             linkedin: "#",
             imgPath: Suryansh
         },
         {
             name: "Bharat Bhushan Mishra",
-            position: "Operations Head",
+            position: "Web Master",
             email: "bharatbhushanmishra777@gmail.com",
             linkedin: "#",
             imgPath: Bharat
         },
         {
             name: "Priyanshu Dubey",
-            position: "Operations Head",
+            position: "event head",
             email: "pridub123@gmail.com",
             linkedin: "#",
             imgPath: priyanshu
@@ -96,28 +96,28 @@ export default function OperatingCommittee() {
         },
         {
             name: "Vinay Jain",
-            position: "Operations Head",
+            position: "Graphic Head",
             email: "vinayjain0410@gmail.com",
             linkedin: "#",
             imgPath: vinay
         },
         {
             name: "Lakshya Jain",
-            position: "Operations Head",
+            position: "graphic coordinator",
             email: "lakshyajain459@gmail.com",
             linkedin: "#",
             imgPath: lakshya
         },
         {
             name: "Ankita Tiwari",
-            position: "Operations Head",
+            position: "client relations coordinator",
             email: "ankitatiwari40347@gmail.com",
             linkedin: "#",
             imgPath: ankita
         },
         {
             name: "Shivam Upadhyay",
-            position: "Operations Head",
+            position: "Event Coordinator",
             email: "shivamupadhyay20271@gmail.com",
             linkedin: "#",
             imgPath: shivam
