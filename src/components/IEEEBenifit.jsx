@@ -63,13 +63,13 @@ function Benefits() {
 
                 <button
                     onClick={handlePrev}
-                    className="h-28 w-10 absolute top-1/2 left-2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-gray-700"
+                    className="md:h-28 md:w-10 absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-200 text-black p-2 rounded-full hover:bg-gray-500"
                 >
                     &lt;
                 </button>
                 <button
                     onClick={handleNext}
-                    className="h-28 w-10 absolute top-1/2 right-2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-gray-700"
+                    className="md:h-28 md:w-10 absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-200 text-black p-2 rounded-full hover:bg-gray-500"
                 >
                     &gt;
                 </button>
