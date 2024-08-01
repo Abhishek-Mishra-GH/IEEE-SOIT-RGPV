@@ -19,7 +19,6 @@ import ankita from '../assets/ieee_team/ankita.jpg'
 import shivam from '../assets/ieee_team/shivam.jpg'
 
 
-
 export default function OperatingCommittee() {
 
     const councilMembers = [{
@@ -67,7 +66,7 @@ export default function OperatingCommittee() {
             email: "nandinitiwari2209@gmail.com",
             linkedin: "#",
             imgPath: Nandini
-        }, 
+        },
         {
             name: "Suryansh Dubey",
             position: "Operations Head",
@@ -88,21 +87,21 @@ export default function OperatingCommittee() {
             email: "pridub123@gmail.com",
             linkedin: "#",
             imgPath: priyanshu
-        }, 
+        },
         {
             name: "Aniruddh Gupta",
             position: "Operations Head",
             email: "aniruddhgupta148@gmail.com",
-            linkedin: "#",  
+            linkedin: "#",
             imgPath: aniruddh
-        }, 
+        },
         {
             name: "Vinay Jain",
             position: "Operations Head",
             email: "vinayjain0410@gmail.com",
             linkedin: "#",
             imgPath: vinay
-        }, 
+        },
         {
             name: "Lakshya Jain",
             position: "Operations Head",
@@ -132,8 +131,11 @@ export default function OperatingCommittee() {
             <h3 className="text-xl font-medium">{name}</h3>
             <h4 className="">{(position + "").toUpperCase()}</h4>
             <div className="flex gap-8">
-                <a href={`mailto:${email}`}> <MdOutlineEmail className="text-xl" /> </a>
-                <a href={`#`}> <LiaLinkedin className="text-xl" /> </a>
+                <a href={`mailto:${email}`}> 
+                <div className="flex items-center">
+                <MdOutlineEmail className="text-xl" /> {" " + email}
+                </div> 
+                </a>
             </div>
         </div>
     }
