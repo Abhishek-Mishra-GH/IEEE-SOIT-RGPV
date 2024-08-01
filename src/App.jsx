@@ -5,7 +5,8 @@ import ContactUs from "./pages/ContactUs"
 import Gallery from "./pages/Gallery"
 import Test from "./pages/Test"
 import Footer from "./components/Footer"
-import ExecutiveCommittee from "./pages/ExecutiveCom"
+import ExecutiveCommittee from "./pages/ExecutiveCommittee"
+import OperatingCommittee from "./pages/OperatingCommittee"
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
         <Route path="/events" element= { <Events/>} />
         <Route path="/gallery" element={ <Gallery/> } />
         <Route path="/executivecommittee" element={ <ExecutiveCommittee/> } />
-        <Route path="/operatingcommittee" element={ <ExecutiveCommittee/> } />
+        <Route path="/operatingcommittee" element={ <OperatingCommittee/> } />
         <Route path="/contactus" element={ <ContactUs />} />
       </Routes>
 

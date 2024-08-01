@@ -17,10 +17,20 @@ export default function CommitteeNavDD() {
             </div>
 
             <motion.div
-                initial={{ height: 0 }}
-                animate={{ height: dropdown ? "auto" : 0, opacity: dropdown ? 1 : 0 }}
-                transition={{ duration: 0.4 }}
-                className="absolute flex flex-col gap-2 top-[3.5rem] bg-primary-background rounded-lg py-4 px-[0.6rem] w-[105%]">
+                initial={{ 
+                    height: 0,
+                    padding: "0 0 0 0",
+                    display: "none",
+                    opacity: 0,
+                }}
+                animate={{
+                    height: dropdown ? "auto" : 0, 
+                    padding: dropdown ? "1rem 0.6rem" : "0 0 0 0",
+                    display: dropdown ? "block" : "none",
+                    opacity: dropdown ? 1 : 0,
+                }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+                className="absolute flex flex-col gap-2 top-[3.5rem] bg-primary-background rounded-lg w-[105%] ">
 
                 <CustomNavLink to="/executivecommittee"> 
                     Executive  

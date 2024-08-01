@@ -54,10 +54,20 @@ function Navbar() {
       </div>
 
       <motion.div 
-        initial={{ height: 0}}
-        animate={{ height: isMenuOpen ? "auto" : 0, opacity: isMenuOpen ? 1 : 0 }}
-        transition={{ duration: 0.4 }}
-        className="sm:hidden flex gap-4 text-lg text-white absolute top-24 right-4 flex-col bg-primary-background shadow-lg rounded-lg px-6 py-6">
+        initial={{ 
+          height: 0,
+          padding: "0 1.5rem",
+          display: "none",
+          opacity: 0,
+      }}
+        animate={{
+          height: isMenuOpen ? "auto" : 0, 
+          padding: isMenuOpen ? "1.5rem" : "0 1.5rem",
+          display: isMenuOpen ? "flex" : "none",
+          opacity: isMenuOpen ? 1 : 0,
+      }}
+        transition={{ duration: 0.4, ease: "linear"}}
+        className="sm:hidden flex gap-4 text-lg text-white absolute top-24 right-4 flex-col bg-primary-background shadow-lg rounded-lg p-6">
 
           <CustomNavLink to="/"> Home </CustomNavLink>
           <CustomNavLink to="/committee"> Committee </CustomNavLink>
