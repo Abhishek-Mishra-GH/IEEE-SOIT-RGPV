@@ -1,6 +1,5 @@
 import React from 'react'
 import { MdOutlineEmail } from "react-icons/md";
-import { LiaLinkedin } from "react-icons/lia";
 import Navbar from "../components/Navbar";
 
 import Ananya from '../assets/ieee_team/ananya.jpg'
