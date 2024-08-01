@@ -29,7 +29,7 @@ export default function CommitteeNavDD() {
                     opacity: dropdown ? 1 : 0,
                 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="absolute flex flex-col justify-around top-[3.5rem] right-0 bg-primary-background rounded-lg text-base min-w-[12rem] border-2 border-green-700">
+                className="absolute flex flex-col justify-around top-[3.5rem] right-0 bg-primary-background rounded-lg text-base min-w-[12rem]">
 
                 <CustomNavLink to="/executivecommittee"> 
                     Executive Committee 
