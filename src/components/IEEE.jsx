@@ -7,12 +7,8 @@ export default function IEEE() {
             {/* About > what is ieee */}
             <div className="w-full md:px-4 py-8">
                 <h1 className="text-5xl text-center my-8">ABOUT US</h1>
-                <div className="grid grid-cols-1 md:grid-cols-3 md:m-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 md:m-2">
                     {/* IEEE logo */}
-                    <div className="flex justify-center items-center">
-                        <img src={IEEELogo} alt="logo-iee" className="h-[30vh] md:h-auto" />
-                    </div>
-                    {/* What is IEEE */}
                     <div className="p-4 col-span-2 flex flex-col justify-center items-center">
                         <div className="md:max-w-[45vw]">
                         <h3 className="text-3xl font-medium my-2">What is IEEE?</h3>
@@ -25,6 +21,12 @@ export default function IEEE() {
                         </p>
                         </div>
                     </div>
+                    
+                    {/* What is IEEE */}
+                    <div className="flex justify-center items-center">
+                        <img src={IEEELogo} alt="logo-iee" className="h-[30vh] md:h-auto" />
+                    </div>
+                    
                 </div>
             </div>
             

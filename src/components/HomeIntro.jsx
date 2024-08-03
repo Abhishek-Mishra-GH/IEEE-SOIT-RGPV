@@ -89,11 +89,12 @@ export default function HomeIntro() {
                 <h2 className="sm:text-4xl md:text-6xl text-xl my-1 font-light">
                     <div className="flex items-center gap-2">
                     <img src={rgpvLogo} alt="logo-rgpv" className="md:h-[72px] h-[36px]" />
-                    IEEE RGPV
+                    IEEE RGPV -
+                    <p> Welcome's you</p>
                     </div>
                 </h2>
-                <h1 className="my-1">Institute of Electrical and</h1>
-                <h1 className="my-1">Electronics Engineers</h1>
+                <h1 className="my-1">Rajiv Gandhi Proudyogiki </h1>
+                <h1 className="my-1">Vishwavidyalaya</h1>
             </motion.div>
             </div>
         )
