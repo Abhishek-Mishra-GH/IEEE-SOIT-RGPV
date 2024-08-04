@@ -104,11 +104,11 @@ const ExecutiveCommittee = () => {
       </div>
 
       {/* Mentor */}
-      <div className="flex flex-col-reverse sm:flex-row p-6">
+      <div className="flex flex-col sm:flex-row p-6">
 
         {/* left section */}
 
-        <div className="flex flex-col items-center gap-4 p-4 max-h-[calc(100vh-10rem)]">
+        <div className="flex flex-col items-center gap-4 p-4 sm:max-h-[calc(100vh-10rem)]">
           <div className="flex justify-center">
             <img src={mentorImg} className="h-72 rounded-lg " alt="img" />
           </div>
