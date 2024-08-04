@@ -24,7 +24,10 @@ function Events() {
   return (
     <>
       <Navbar />
-      <Particle name="EVENT" />
+      <h1 className="text-5xl text-center my-8 font-semibold">
+                EVENT
+                <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-32 border-b-4 border-black"></div>
+        </h1>
       <div className="flex flex-col items-center justify-center mb-12">
         <h1 className="text-3xl pb-8 font-semibold">Event Calendar</h1>
         <Calendar

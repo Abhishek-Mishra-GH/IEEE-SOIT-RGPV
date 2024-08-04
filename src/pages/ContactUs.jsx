@@ -60,7 +60,12 @@ const ContactUs = () => {
     <>
       <Navbar />
       <div className="flex flex-col">
-        <Particle name="CONTACT US" />
+        <h1 className="text-5xl text-center my-8 font-semibold">
+                CONTACT US
+                <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-52 border-b-4 border-black"></div>
+        </h1>
+        
+      
         {/* Committee Members Contact Details */}
 
         <div>
