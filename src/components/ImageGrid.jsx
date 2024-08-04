@@ -15,7 +15,7 @@ const ImageGrid = () => {
   };
 
   return (
-    <div className="max-w-[80rem] mx-auto p-4 bg-white border-4 border-gray-300 rounded-lg shadow-lg">
+    <div className="max-w-full mx-auto p-4 bg-white border-4 border-gray-300 rounded-lg shadow-lg">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {images.map((image, index) => (
           <div
