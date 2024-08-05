@@ -1,4 +1,4 @@
-import { Route, Routes, Router, useLocation } from "react-router-dom"
+import { Route, Routes, Router, useLocation, Link } from "react-router-dom"
 import Home from "./pages/Home"
 import Events from "./pages/Events"
 import ContactUs from "./pages/ContactUs"
@@ -12,6 +12,14 @@ import Blog from "./pages/Blog"
 
 function App() {
   const location = useLocation();
+
+  useEffect(() => {
+    if(window.location.pathname === '/' && window.location.search == "?blog") {
+      window.location.search = "";
+      window.location.pathname = "/blog";
+    }
+
+  })
 
   useEffect(() => {
     window.scrollTo(0, 0);
