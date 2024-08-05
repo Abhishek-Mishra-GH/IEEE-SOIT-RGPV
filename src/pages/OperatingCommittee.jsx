@@ -51,7 +51,6 @@ export default function OperatingCommittee() {
     ];
 
     const operationsHead = [
-        ...councilMembers,
         {
             name: "Dhruv Jain",
             position: "finance coordinator",
@@ -125,7 +124,7 @@ export default function OperatingCommittee() {
     ]
 
     const MemberCard = ({ name, position, email, linkedin, imgPath }) => {
-        return <div className="max-w-sm border-red-600 flex flex-col items-center gap-1 p-4">
+        return <div className="max-w-sm border-red-600 flex flex-col items-center gap-1 p-4 hover:shadow-2xl rounded-lg min-w-72">
             <img className="h-28 m-1 w-28 border rounded-full" src={imgPath} alt={name} />
             <h3 className="text-xl font-medium">{name}</h3>
             <h4 className="">{(position + "").toUpperCase()}</h4>
@@ -145,20 +144,17 @@ export default function OperatingCommittee() {
             <div>
                 {/* Council members */}
                 <div>
-                    <h1 className="text-4xl text-center font-semibold p-6">COUNCIL</h1>
-                    <div className="grid grid-cols-1 gap-4 justify-items-center">
-                        <MemberCard {...councilMembers[0]} />
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
-                        <MemberCard {...councilMembers[1]} />
-                        <MemberCard {...councilMembers[2]} />
-                        <MemberCard {...councilMembers[3]} />
+                    <h1 className="text-4xl text-center font-semibold px-6 py-8">EXECUTIVE COMMITTEE</h1>
+                    <div>
+                        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 justify-items-center">
+                            {councilMembers.map((member, index) => <MemberCard key={index} {...member} />)}
+                        </div>
                     </div>
                 </div>
 
                 {/* Operations head */}
                 <div>
-                    <h1 className="text-4xl text-center font-semibold pt-8 pb-6 px-6">OPERATIONS HEAD</h1>
+                    <h1 className="text-4xl text-center font-semibold pt-10 pb-8 px-6">OPERATING COMMITTEE</h1>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
                         {operationsHead.map((member, index) => <MemberCard key={index} {...member} />)}
                     </div>

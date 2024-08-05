@@ -32,7 +32,7 @@ function Navbar() {
         <CommitteeNavDD /> 
         <CustomNavLink to="/events"> Events </CustomNavLink>
         <CustomNavLink to="/gallery"> Gallery </CustomNavLink>
-
+        <CustomNavLink to="/blog"> Blog </CustomNavLink>
         <CustomNavLink to="/contactus" className="border px-4 py-1 rounded-full hover:border-primary-foreground">Contact Us</CustomNavLink>
       </div>
 
@@ -74,6 +74,7 @@ function Navbar() {
           <CustomNavLink to="/operatingcommittee"> Operating Committee </CustomNavLink>
           <CustomNavLink to="/events"> Events </CustomNavLink>
           <CustomNavLink to="/gallery"> Gallery </CustomNavLink>
+          <CustomNavLink to="/blog"> Blog </CustomNavLink>
 
           <div className='mt-6'>
           <CustomNavLink to="/contactus" className="border px-4 py-1 rounded-full hover:border-primary-foreground">Contact Us</CustomNavLink>

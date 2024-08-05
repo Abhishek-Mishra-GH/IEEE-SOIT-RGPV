@@ -6,32 +6,37 @@ import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactForm";
 import Particle from "../components/particle";
 
+import Ananya from "../assets/ieee_team/ananya.jpg";
+import Vedeka from "../assets/ieee_team/vedeka.jpg";
+import Rudresh from "../assets/ieee_team/rudresh.jpg";
+import Parth from "../assets/ieee_team/parth.jpg";
+
 // all details of the operating members are stored in the array of objects. The details are then mapped to the respective components.
 
 const operaatingMembers = [
   {
     name: "Ananya Mishra",
-    email: "Chairieeergpv@gmail.com",
+    email: "chairieeergpv@gmail.com",
     designation: "Chairperson",
-    icon: <IoMdPerson />,
+    icon: Ananya,
   },
   {
     name: "Vedeka Gupta",
-    email: "Vicechairpersonieeergpv@gmail.com",
+    email: "vicechairpersonieeergpv@gmail.com",
     designation: "Vice Chairperson",
-    icon: <IoMdPerson />,
+    icon:  Vedeka,
   },
   {
     name: "Rudresh Bharadwaj",
-    email: "Ieeesecretary05@gmail.com",
+    email: "ieeesecretary05@gmail.com",
     designation: "Secretary",
-    icon: <IoMdPerson />,
+    icon: Rudresh,
   },
   {
     name: "Parth Parik",
-    email: "Ieeergpvtreasurer@gmail.com",
+    email: "ieeergpvtreasurer@gmail.com",
     designation: "Treasurer",
-    icon: <IoMdPerson />,
+    icon: Parth,
   },
 ];
 const ContactUs = () => {
@@ -39,9 +44,16 @@ const ContactUs = () => {
     return (
       <>
         <div className="grid justify-items-center border-stone-950 rounded-xl p-4 border-0 hover:shadow-2xl w-72 ">
-          <IconContext.Provider value={{ color: "#2f699e", size: "4em" }}>
+          {/* <IconContext.Provider value={{ color: "#2f699e", size: "4em" }}>
             <div>{<IoMdPerson />}</div>
-          </IconContext.Provider>
+          </IconContext.Provider> */}
+          <div>
+            <img
+              src={member.icon}
+              alt="member"
+              className="rounded-full h-32 w-32 object-cover"
+            />
+          </div>
 
           <h1 className="text-2xl mt-3 mb-3">{member.name} </h1>
           <p className="text-lg mb-3">{member.designation}</p>
@@ -60,17 +72,17 @@ const ContactUs = () => {
     <>
       <Navbar />
       <div className="flex flex-col">
-        <h1 className="text-5xl text-center my-8 font-semibold">
+        {/* <h1 className="text-5xl text-center my-8 font-semibold">
                 CONTACT US
                 <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-52 border-b-4 border-black"></div>
-        </h1>
+        </h1> */}
         
       
         {/* Committee Members Contact Details */}
 
         <div>
           <div className="grid justify-items-center font-semibold text-xl mt-5 mb-4">
-            <h1 className="text-3xl">OPERATION HEADS</h1>
+            <h1 className="text-3xl">OPERATIONS HEADS</h1>
             <div>
               <div className="justify-items-center mt-10 mb-10 flex flex-row gap-x-8 flex-wrap justify-around gap-6">
                 {operaatingMembers.map(executivemap)}
