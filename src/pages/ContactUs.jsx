@@ -82,9 +82,9 @@ const ContactUs = () => {
 
         <div>
           <div className="grid justify-items-center font-semibold text-xl mt-5 mb-4">
-            <h1 className="text-3xl">OPERATIONS HEADS</h1>
+            <h1 className="text-3xl font-semibold mt-2">CONTACT US</h1>
             <div>
-              <div className="justify-items-center mt-10 mb-10 flex flex-row gap-x-8 flex-wrap justify-around gap-6">
+              <div className="m-10 grid grid-cols-1 sm:grid-cols-4">
                 {operaatingMembers.map(executivemap)}
               </div>
             </div>
