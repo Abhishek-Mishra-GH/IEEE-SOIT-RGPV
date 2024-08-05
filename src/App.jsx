@@ -15,9 +15,13 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if(window.location.pathname === '/' && window.location.search == "?blog") {
+
+    if(window.location.pathname !== "/") return;
+
+    if(window.location.search == "?blog") {
       navigate('/blog');
     }
+    
   })
 
   useEffect(() => {

@@ -1,30 +1,30 @@
 import React from 'react'
-import IEEELogo from "../assets/ieee-logo-lg.svg"
+import IEEELogo from "../assets/ieee_logos/ieee-logo-simplified.jpg"
+// import IEEELogo from "../assets/ieee-logo-lg.svg"
 
 export default function IEEE() {
     return (
-        <div className="w-full">
+        <div className="w-full mb-8">
             {/* About > what is ieee */}
-            <div className="w-full md:px-4 py-8">
-                <h1 className="text-5xl text-center my-8">ABOUT US</h1>
-                <div className="grid grid-cols-1 md:grid-cols-3 md:m-2">
-                    {/* IEEE logo */}
-                    <div className="p-4 col-span-2 flex flex-col justify-center items-center">
-                        <div className="md:max-w-[45vw]">
+            <div className="w-full md:px-4 py-12">
+                <h1 className="text-5xl text-center mt-8 mb-2">ABOUT US</h1>
+                <div className="grid grid-cols-1 md:grid-cols-3">
+                    {/* What is IEEE */}
+                    <div className="py-4 col-span-2 flex flex-col justify-center items-start p-8">
+                        <div className="md:max-w-[50vw]">
                         <h3 className="text-3xl font-medium my-2">What is IEEE?</h3>
                         <p className="text-xl">
                             IEEE RGPV is a student chapter of RGPV, It is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. As a student chapter at RGPV, our mission is to ignite our passions, foster a sense of community, and provide enriching experiences.
                             <br />
                             <br />
                             Through our diverse activities and collaborative environment, we strive to create a space where students can grow both academically and professionally, preparing them to become future leaders in technology and engineering.
-
                         </p>
                         </div>
                     </div>
                     
-                    {/* What is IEEE */}
-                    <div className="flex justify-center items-center">
-                        <img src={IEEELogo} alt="logo-ieee" className="h-[30vh] md:h-auto" />
+                    {/* IEEE logo */}
+                    <div className="flex justify-center items-center sm:mr-24">
+                        <img src={IEEELogo} alt="logo-ieee" className="h-[40vh] md:h-auto" />
                     </div>
                     
                 </div>
