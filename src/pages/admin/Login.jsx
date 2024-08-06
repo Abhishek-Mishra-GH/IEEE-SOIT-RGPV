@@ -15,7 +15,7 @@ const Login = ({ setLoggedIn }) => {
   } ,[])
 
   const handleLogin = () => {
-    axios.post("http://167.71.224.142:8344/api/auth/login", {
+    axios.post("https://167.71.224.142:8344/api/auth/login", {
       username: username,
       password: password
     }).then((resp) => {
