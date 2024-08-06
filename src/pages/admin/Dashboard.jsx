@@ -8,7 +8,7 @@ const Dashboard = ({ setLoggedIn }) => {
         async function fetchTeams() {
             try {
                 const token = localStorage.getItem('token');
-                const resp = await axios.get('https://167.71.224.142:8344/api/teams', {
+                const resp = await axios.get('https://ieee.abhishekcodes.tech/api/teams', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }

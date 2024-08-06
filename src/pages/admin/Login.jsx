@@ -15,7 +15,7 @@ const Login = ({ setLoggedIn }) => {
   } ,[])
 
   const handleLogin = () => {
-    axios.post("https://167.71.224.142:8344/api/auth/login", {
+    axios.post("https://ieee.abhishekcodes.tech/api/auth/login", {
       username: username,
       password: password
     }).then((resp) => {
