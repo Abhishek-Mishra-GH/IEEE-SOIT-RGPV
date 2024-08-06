@@ -4,6 +4,7 @@ import Events from "./pages/Events"
 import ContactUs from "./pages/ContactUs"
 import Gallery from "./pages/Gallery"
 import Test from "./pages/Test"
+import DashboardApp from "./pages/admin/DashboardApp"
 import Footer from "./components/Footer"
 import ExecutiveCommittee from "./pages/ExecutiveCommittee"
 import OperatingCommittee from "./pages/OperatingCommittee"
@@ -20,6 +21,12 @@ function App() {
 
     if(window.location.search == "?blog") {
       navigate('/blog');
+      return;
+    }
+
+    if(window.location.search == "?dashboard") {
+      navigate('/dashboard');
+      return;
     }
     
   })
@@ -40,6 +47,7 @@ function App() {
         <Route path="/operatingcommittee" element={ <OperatingCommittee/> } />
         <Route path="/blog" element={ <Blog /> } />
         <Route path="/contactus" element={ <ContactUs />} />
+        <Route path="/dashboard" element={ <DashboardApp />} />
       </Routes>
       {/* Footer */}
       <Footer />
