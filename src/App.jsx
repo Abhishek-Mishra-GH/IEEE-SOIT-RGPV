@@ -9,6 +9,7 @@ import Footer from "./components/Footer"
 import ExecutiveCommittee from "./pages/ExecutiveCommittee"
 import OperatingCommittee from "./pages/OperatingCommittee"
 import { useEffect } from "react"
+import FallbackRoute from "./components/FallbackRoute"
 import Blog from "./pages/Blog"
 
 function App() {
@@ -18,11 +19,6 @@ function App() {
   useEffect(() => {
 
     if(window.location.pathname !== "/") return;
-
-    if(window.location.search == "?blog") {
-      navigate('/blog');
-      return;
-    }
 
     if(window.location.search == "?dashboard") {
       navigate('/dashboard');
@@ -48,10 +44,12 @@ function App() {
         <Route path="/blog" element={ <Blog /> } />
         <Route path="/contactus" element={ <ContactUs />} />
         <Route path="/dashboard" element={ <DashboardApp />} />
+        <Route path="*" element={ <FallbackRoute />} />
       </Routes>
       {/* Footer */}
       <Footer />
     </div>
+
   )
 }
 
