@@ -41,7 +41,7 @@ function App() {
         <Route path="/gallery" element={ <Gallery/> } />
         <Route path="/executivecommittee" element={ <ExecutiveCommittee/> } />
         <Route path="/operatingcommittee" element={ <OperatingCommittee/> } />
-        <Route path="/blog" element={ <Blog /> } />
+        <Route path="/?blog" element={ <Blog /> } />
         <Route path="/contactus" element={ <ContactUs />} />
         <Route path="/dashboard" element={ <DashboardApp />} />
         <Route path="*" element={ <FallbackRoute />} />
