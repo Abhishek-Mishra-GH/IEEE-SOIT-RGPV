@@ -1,22 +1,26 @@
 import { useNavigate } from 'react-router-dom'
- 
+import { useEffect } from "react";
 
 const FallbackRoute = () => {
     const navigate = useNavigate();
     
     useEffect(() => {
-      const path = window.location.pathname;
-      if(path === "/dashboard") navigate("/dashboard");
-      else if(path === "events") navigate("/events");
-      else if(path === "gallery") navigate("gallery"); 
-      else if(path === "executivecommittee") navigate("executivecommittee"); 
-      else if(path === "operatingcommittee") navigate("operatingcommittee"); 
-      else if(path === "blog") navigate("blog"); 
-      else if(path === "contactus") navigate("contactus"); 
-      else navigate(path);
-    } ,[])
+        const path = window.location.pathname;
+        if(path === "/dashboard") navigate("/dashboard");
+        if(path === "events") navigate("/events");
+        if(path === "gallery") navigate("gallery"); 
+        if(path === "executivecommittee") navigate("executivecommittee"); 
+        if(path === "operatingcommittee") navigate("operatingcommittee"); 
+        if(path === "blog") navigate("blog"); 
+        if(path === "contactus") navigate("contactus");
+        navigate("/");
+    } ,[]);
+
+
     return (
-      <div className="h-screen"></div>
+      <div className="h-screen">
+        Hello
+      </div>
     );
   }
 
