@@ -6,8 +6,8 @@ const FallbackRoute = () => {
     
     useEffect(() => {
         const path = window.location.pathname;
-        if(path === "/dashboard") navigate("/dashboardk");
-        if(path === "events") navigate("/events");
+        if(path === "/dashboard") navigate("/dashboard");
+        if(path === "events") navigate("/eventsk");
         if(path === "gallery") navigate("gallery"); 
         if(path === "executivecommittee") navigate("executivecommittee"); 
         if(path === "operatingcommittee") navigate("operatingcommittee"); 
