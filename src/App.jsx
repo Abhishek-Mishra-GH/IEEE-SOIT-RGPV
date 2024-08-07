@@ -20,8 +20,8 @@ function App() {
 
     if(window.location.pathname !== "/") return;
 
-    if(window.location.search == "?dashboard") {
-      navigate('/dashboard');
+    if(window.location.search == "?dest") {
+      navigate();
       return;
     }
     
