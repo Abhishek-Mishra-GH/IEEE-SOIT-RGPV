@@ -11,6 +11,7 @@ import OperatingCommittee from "./pages/OperatingCommittee"
 import { useEffect } from "react"
 import FallbackRoute from "./components/FallbackRoute"
 import Blog from "./pages/Blog"
+import { MdOutlineSystemSecurityUpdateWarning } from "react-icons/md"
 
 function App() {
   const location = useLocation();
@@ -19,9 +20,10 @@ function App() {
   useEffect(() => {
 
     if(window.location.pathname !== "/") return;
-
-    if(window.location.search == "?dest") {
-      navigate();
+    const search = window.location.search
+    if(window.location.search.includes("?")) {
+      const search = win
+      navigate(window.location.search.substring);
       return;
     }
     

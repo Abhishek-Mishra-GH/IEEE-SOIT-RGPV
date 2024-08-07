@@ -13,7 +13,7 @@ const FallbackRoute = () => {
         if(path === "operatingcommittee") navigate("operatingcommittee"); 
         if(path === "blog") navigate("blog"); 
         if(path === "contactus") navigate("contactus");
-        navigate("/");
+        // navigate("/");
     } ,[]);
 
 
