@@ -21,9 +21,8 @@ export default function EventRegistration() {
 
   const handleSubmit = (e) => {
 
-    e.preventDefault();
-
-    const teamName = document.getElementById("teamName").value;
+    try {
+        const teamName = document.getElementById("teamName").value;
     const teamLeader = document.getElementById("teamLeader").value;
     const email = document.getElementById("email").value;
     const contact = document.getElementById("contact").value;
@@ -32,6 +31,9 @@ export default function EventRegistration() {
     const year = document.querySelector('input[name="year"]:checked').value;
     const startupIdea = document.getElementById("startupIdea").value;
     const mediumOfReach = document.querySelector('input[name="mediumOfReach"]:checked').value;
+    } catch (err) {
+        setError("Please fill the form properly.");
+    }
 
     const teamData = {
         teamName,
@@ -55,7 +57,7 @@ export default function EventRegistration() {
       }).then((resp) => {
         console.log(resp.data);
       }).catch((err) => {
-        setError(err.response.data.message);
+        setError("Error occured. please fill the form properly.");
       })
 
 }
@@ -187,6 +189,10 @@ export default function EventRegistration() {
                         Add Member
                     </button>
                 </div>
+            </div>
+
+            <div>
+                {error && <p className="text-red-600 pl-4">*{error}</p>}
             </div>
 
             {/* Submit */}

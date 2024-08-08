@@ -17,6 +17,7 @@ const Dashboard = ({ setLoggedIn }) => {
                 console.log(resp.data);
                 setTeams([...resp.data]);
             } catch (err) {
+                setLoggedIn(false);
                 console.log(err);
             }
         }
@@ -27,7 +28,7 @@ const Dashboard = ({ setLoggedIn }) => {
 
     const TeamCard = ({ team }) => {
         return <div className="flex w-[23rem] sm:w-[25rem] flex-col gap-2 border-2 rounded-lg shadow-sm m-2 p-3 sm:py-5 sm:px-6 hover:scale-[1.02] hover:shadow-lg text-[0.9rem]">
-            <h3 className="text-lg font-bold"> {team.teamName + "".toUpperCase()} </h3>
+            <h3 className="text-lg font-bold"> {(team.teamName + " ").toUpperCase()} </h3>
             <p><span className="font-bold">Startup idea:</span> {team.startupIdea} </p>
             <p><span className="font-bold">Leader:</span> {team.teamLeader} </p>
             <p><span className="font-bold">Email:</span> {team.email} </p>
@@ -47,7 +48,7 @@ const Dashboard = ({ setLoggedIn }) => {
 
     const DataCard = ({ title, content }) => {
         return <div className="p-4 border-2 rounded-lg shadow-sm flex justify-center">
-            <h3 className="text-xl inline-block font-bold"> {title.toUpperCase()}: </h3>
+            <h3 className="text-xl inline-block font-bold"> {(title + " ").toUpperCase()}: </h3>
             <span className="text-xl px-1"> {content} </span>
         </div>
     }
