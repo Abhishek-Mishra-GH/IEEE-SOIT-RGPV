@@ -27,7 +27,7 @@ const Dashboard = ({ setLoggedIn }) => {
 
     const TeamCard = ({ team }) => {
         return <div className="flex w-[23rem] sm:w-[25rem] flex-col gap-2 border-2 rounded-lg shadow-sm m-2 p-3 sm:py-5 sm:px-6 hover:scale-[1.02] hover:shadow-lg text-[0.9rem]">
-            <h3 className="text-lg font-bold"> {team.teamName.toUpperCase()} </h3>
+            <h3 className="text-lg font-bold"> {team.teamName + "".toUpperCase()} </h3>
             <p><span className="font-bold">Startup idea:</span> {team.startupIdea} </p>
             <p><span className="font-bold">Leader:</span> {team.teamLeader} </p>
             <p><span className="font-bold">Email:</span> {team.email} </p>

@@ -11,6 +11,7 @@ import OperatingCommittee from "./pages/OperatingCommittee"
 import { useEffect } from "react"
 import FallbackRoute from "./components/FallbackRoute"
 import Blog from "./pages/Blog"
+import EventRegistration from "./pages/EventRegistration"
 
 function App() {
   const location = useLocation();
@@ -44,6 +45,7 @@ function App() {
         <Route path="/?blog" element={ <Blog /> } />
         <Route path="/contactus" element={ <ContactUs />} />
         <Route path="/dashboard" element={ <DashboardApp />} />
+        <Route path="/eventregistration" element={ <EventRegistration />} />
         <Route path="*" element={ <FallbackRoute />} />
       </Routes>
       {/* Footer */}
