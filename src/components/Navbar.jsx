@@ -18,7 +18,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <nav id='nav' className="sticky top-0 h-20 bg-primary-background w-full z-30 shadow-sm flex justify-between items-center px-4">
+    <nav id='nav' className="sticky top-0 h-20 bg-primary-background w-full z-80 shadow-sm flex justify-between items-center px-4">
       {/* left nav */}
         <div>
           <Link to="/">
