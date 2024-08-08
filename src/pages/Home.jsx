@@ -7,10 +7,12 @@ import IEEEH from '../components/IEEEH';
 import ContactForm from "../components/ContactForm";
 import IEEEBenifit from '../components/IEEEBenifit';
 import GetInTouch from "../components/GetInTouch";
+import Popup from "../components/Popup";
 
 export default function Home() {
 
   const [isAtTop, setIsAtTop] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,8 +23,10 @@ export default function Home() {
         const offSetTop = navElement.getBoundingClientRect().top + scrollTop
         if (scrollTop >= offSetTop) {
           setIsAtTop(true)
+          setIsPopupOpen(true);
         } else {
           setIsAtTop(false)
+          setIsPopupOpen(false);
         }
       }
     }
@@ -54,6 +58,7 @@ export default function Home() {
 
       </motion.div>
 
+      <Popup isOpen={isPopupOpen} setIsOpen={setIsPopupOpen} />
       <IEEE />
       <IEEEH />
       <IEEEBenifit />
