@@ -18,7 +18,7 @@ const DrSanjeevSharma = () => {
         className=" font-bold text-center mb-1 sm:mb-10"
       >
         {" "}
-        Professor at School of Information Technology, Rajiv Gandhi Prodyougiki
+        Professor at School of Information Technology, Rajiv Gandhi Proudyogiki
         Vishwavidyalaya
       </p>
 
