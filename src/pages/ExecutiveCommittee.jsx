@@ -117,7 +117,7 @@ const ExecutiveCommittee = () => {
               Dr. Sanjeev Sharma - Mentor
             </h1>
             <p style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }} className=" font-bold mb-1 sm:mb-10">
-              Professor at School of Information Technology, Rajiv Gandhi Prodyougiki
+              Professor at School of Information Technology, Rajiv Gandhi Proudyogiki
               Vishwavidyalaya
             </p>
           </div>
