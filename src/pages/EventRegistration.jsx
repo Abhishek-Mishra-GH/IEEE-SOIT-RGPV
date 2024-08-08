@@ -22,6 +22,10 @@ export default function EventRegistration() {
     const [error, setError] = useState("");
     const [registered, setRegistered] = useState(false);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [registered]);
+
     const handleSubmit = (e) => {
 
         e.preventDefault();
@@ -74,7 +78,7 @@ export default function EventRegistration() {
     return (
         <div className="min-h-screen">
             <Navbar />
-            {registered ? <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl text-center text-primary-background">Registered Successfully</h1> : (
+            {registered ? <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl text-center text-primary-background">Registered Successfully.</h1> : (
 
                 <div className="flex bg-primary-background">
                     {/* left */}
