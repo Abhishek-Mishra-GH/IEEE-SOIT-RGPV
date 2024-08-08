@@ -29,6 +29,10 @@ export default function EventRegistration() {
     const handleSubmit = (e) => {
 
         e.preventDefault();
+        if(teamMembers.length > 4) {
+            setError("* Maximum 5 members allowed in a team.");
+            return;
+        }
 
         try {
             const teamName = document.getElementById("teamName").value;
@@ -210,7 +214,7 @@ export default function EventRegistration() {
                                             className="min-w-[60%]  p-2 border-2 border-gray-300 rounded-md outline-none focus:border-black"
                                         />
                                         <button
-                                            className="h-full bg-primary-background text-white py-1 px-2 rounded"
+                                            className="h-full text-sm sm:text-base bg-primary-background text-white py-1 px-2 rounded"
                                             onClick={(e) => {
                                                 e.preventDefault();
                                                 const memberElement = document.getElementById("teamMember");
