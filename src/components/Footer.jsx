@@ -59,9 +59,9 @@ function Footer() {
         <div className=" text-white relative top-2  p-2 flex flex-col items-center md:items-start">
           <h2 className="flex justify-center font-bold underline md:truncate">OTHER LINKS</h2>
           <Link to="/contactus" className="p-1 flex justify-center gap-0.5 items-center md:truncate hover:text-primary-foreground"> < MdContacts /> Contact Us</Link>
-          <a href="https://maps.app.goo.gl/fDCu3Efb7Gb9FmCx8" className="p-1 flex justify-center gap-1 items-center md:truncate hover:text-primary-foreground">
+          <Link href="https://maps.app.goo.gl/fDCu3Efb7Gb9FmCx8" className="p-1 flex justify-center gap-1 items-center md:truncate hover:text-primary-foreground">
               < FaMapMarkerAlt /> Our Location
-          </a>
+          </Link>
         </div>
 
 
