@@ -17,6 +17,7 @@ const Dashboard = ({ setLoggedIn }) => {
                 console.log(resp.data);
                 setTeams([...resp.data]);
             } catch (err) {
+                localStorage.removeItem('token');
                 setLoggedIn(false);
                 console.log(err);
             }
