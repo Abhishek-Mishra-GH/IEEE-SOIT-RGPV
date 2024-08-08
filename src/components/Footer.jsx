@@ -19,7 +19,7 @@ function Footer() {
 
   return (
     <footer>
-      <div className="bg-blue-950 text-white gap-4 py-4 md:py-8 px-32 flex flex-col items-center md:flex-row md:justify-between md:items-start md:gap-16">
+      <div className="bg-primary-background text-white gap-4 py-4 md:py-8 px-32 flex flex-col items-center md:flex-row md:justify-between md:items-start md:gap-16">
 
         {/*first section*/}
 
