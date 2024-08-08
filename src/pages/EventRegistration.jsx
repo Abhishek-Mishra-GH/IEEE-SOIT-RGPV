@@ -69,7 +69,7 @@ export default function EventRegistration() {
                 setError("");
                 setRegistered(true);
             }).catch((err) => {
-                setError("* Error occured. please fill the form properly.");
+                setError("* Please fill the form properly.");
             });
 
         } catch (err) {
@@ -217,6 +217,12 @@ export default function EventRegistration() {
                                             className="h-full text-sm sm:text-base bg-primary-background text-white py-1 px-2 rounded"
                                             onClick={(e) => {
                                                 e.preventDefault();
+                                                
+                                                if(teamMembers.length >= 4) {
+                                                    setError("* Maximum 5 members allowed in a team.");
+                                                    return;
+                                                }
+                                                
                                                 const memberElement = document.getElementById("teamMember");
                                                 if (memberElement.value === "") return;
                                                 setTeamMembers([...teamMembers, memberElement.value]);
