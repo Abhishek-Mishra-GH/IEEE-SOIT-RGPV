@@ -90,7 +90,7 @@ export default function HomeIntro() {
                     <div className="flex items-center gap-2">
                     <img src={rgpvLogo} alt="logo-rgpv" className="md:h-[72px] h-[36px]" />
                     IEEE RGPV -
-                    <p> Welcome's you</p>
+                    <p> Welcomes you</p>
                     </div>
                 </h2>
                 <h1 className="my-1">Rajiv Gandhi Proudyogiki </h1>
