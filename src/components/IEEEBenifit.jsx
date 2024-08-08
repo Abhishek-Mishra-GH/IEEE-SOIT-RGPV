@@ -22,7 +22,7 @@ function Benefits() {
             description: 'These events provide platforms for research presentation, learning, and networking.'
         },
         {
-            title: 'Leadership',
+            title: 'LEADERSHIP',
             description: 'Involvement also enhances your professional profile and opens up leadership and volunteering opportunities, allowing you to make a positive impact on society.'
         }
     ];
