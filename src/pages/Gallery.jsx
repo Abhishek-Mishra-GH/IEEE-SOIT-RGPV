@@ -10,7 +10,7 @@ export default function Gallery() {
       <Navbar />
       <h1 className="text-5xl text-center my-8 font-semibold">
         GALLERY
-        <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-44 border-b-4 border-black -z-[99]"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-44 border-b-4 border-black -z-0"></div>
       </h1>
       <div>
         <br></br>
