@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.svg';
+import logo from '../assets/ieeergpvlogo.jpg'
 import { MdContacts } from "react-icons/md"
 import { FaHome } from "react-icons/fa";
 import { GrGallery } from "react-icons/gr";
@@ -23,10 +23,12 @@ function Footer() {
 
         {/*first section*/}
 
-        <div className="text-md flex flex-col md:items-start gap-6 max-w-fit md:mt-5">
+        <div className="text-basse flex flex-col md:items-start gap-4 max-w-fit md:mt-2">
+          <div>
           <Link to="/" className='mx-auto'> 
-          <img src={logo} alt="ieee img" />
+          <img src={logo} alt="ieee img" className="h-[4.5rem]" />
           </Link>
+          </div>
 
           <div>
             <p className="text-nowrap"> IEEE is the world's largest technical </p>

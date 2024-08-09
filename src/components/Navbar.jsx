@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../assets/logo.svg'
+import logo from '../assets/ieeergpvlogo.jpg'
 import clsx from 'clsx'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { CgClose } from "react-icons/cg";
@@ -22,7 +22,7 @@ function Navbar() {
       {/* left nav */}
         <div>
           <Link to="/">
-            <img src={logo} alt="logo" className="h-12" />
+            <img src={logo} alt="logo" className="h-[4.2rem] max-h-full" />
           </Link>
         </div>
 

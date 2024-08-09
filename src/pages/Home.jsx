@@ -52,7 +52,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: isAtTop ? 1 : 0 }}
         transition={{ duration: 0.6, ease: 'easeInOut' }}
-        className="sticky top-0">
+        className="sticky top-0 z-[9999] bg-primary-background">
 
         <Navbar />
 

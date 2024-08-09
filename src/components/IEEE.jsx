@@ -24,7 +24,7 @@ export default function IEEE() {
                     
                     {/* IEEE logo */}
                     <div className="flex justify-center items-center sm:mr-24 mt-8 sm:mt-0">
-                        <img src={IEEELogo} alt="logo-ieee" className="h-24 sm:h-40" />
+                        <img src={IEEELogo} alt="logo-ieee" className="h-24 sm:h-[9rem]" />
                     </div>
                     
                 </div>

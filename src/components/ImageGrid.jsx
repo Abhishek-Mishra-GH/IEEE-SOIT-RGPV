@@ -15,12 +15,12 @@ const ImageGrid = () => {
   };
 
   return (
-    <div className="w-full mx-auto p-4 bg-white border-4 border-gray-300 rounded-lg shadow-lg overflow-x-auto scrollbar-hide">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="w-full mx-auto p-4 bg-transparent border-4 border-gray-300 rounded-lg shadow-lg overflow-x-auto scrollbar-hide ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 place-items-center">
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative rounded-lg overflow-hidden border-4 border-gray-700 shadow-custom group w-72 h-72"
+            className="relative -z-[20] rounded-lg overflow-hidden border-4 border-gray-900 shadow-custom group w-72 h-72"
             onClick={() => handleImageClick(image)}
           >
             <img
