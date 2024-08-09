@@ -12,7 +12,7 @@ export default function Gallery() {
         GALLERY
         <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-44 border-b-4 border-black -z-[99]"></div>
       </h1>
-      <div>
+      <div className="-z-0">
         <br></br>
 
         <div className="w-3/4 h-1/2 mx-auto">

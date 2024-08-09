@@ -1,9 +1,9 @@
-// src/components/ImageGrid.js
-import React, { useState } from 'react';
-import { images } from "../assets/img";
-import Modal from '../assets/Modal';
+import React, { useState } from 'react'
+import { images } from '../assets/img'
+import Modal from "../assets/Modal";
 
-const ImageGrid = () => {
+export default function ImageGrid() {
+
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (image) => {
@@ -14,27 +14,29 @@ const ImageGrid = () => {
     setSelectedImage(null);
   };
 
-  return (
-    <div className="w-full mx-auto p-4 bg-transparent border-4 border-gray-300 rounded-lg shadow-lg overflow-x-auto scrollbar-hide ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 place-items-center">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="relative -z-[20] rounded-lg overflow-hidden border-4 border-gray-900 shadow-custom group w-72 h-72"
-            onClick={() => handleImageClick(image)}
-          >
-            <img
-              src={image}
-              alt={`Image ${index}`}
-              className="w-full h-full object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-lg group-hover:z-10 cursor-pointer"
+  const Img = ({image}) => {
+    return (
+        <div className="h-72 w-72 max-w-sm overflow-hidden border shadow-md rounded-lg">
+            <img 
+                src={image} 
+                alt="img"
+                onClick={() => handleImageClick(image)}
+                className="h-72 w-full object-cover  sm:hover:scale-110 sm:hover:relative sm:hover:transform sm:transition-transform sm:duration-300 sm:ease-in-out hover:shadow-lg cursor-pointer rounded-lg" 
             />
-            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 ease-in-out"></div>
-          </div>
-        ))}
-      </div>
-      <Modal isOpen={!!selectedImage} onClose={handleCloseModal} image={selectedImage} />
-    </div>
-  );
-};
+        </div>
+    )
+  }
 
-export default ImageGrid;
+  return (
+    <>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center gap-6 py-8">
+      {
+        images.map(image => {
+            return <Img image={image} />
+        })
+      }
+    </div>
+    <Modal isOpen={!!selectedImage} onClose={handleCloseModal} image={selectedImage} />
+    </>
+  )
+}
