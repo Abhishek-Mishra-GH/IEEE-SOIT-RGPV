@@ -23,10 +23,10 @@ const Carousel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto -z-[999]">
-      <div className="overflow-hidden relative h-[33rem] rounded-lg">
+    <div className="relative w-full max-w-4xl mx-auto">
+      <div className="overflow-hidden relative -z-50 h-[33rem] rounded-lg">
         <div
-          className="flex transition-transform ease-out duration-500"
+          className="flex transition-transform ease-out duration-500 "
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((image, index) => (
