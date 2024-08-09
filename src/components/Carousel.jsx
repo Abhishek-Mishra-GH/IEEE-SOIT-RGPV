@@ -23,7 +23,7 @@ const Carousel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative -z-60 w-full max-w-4xl mx-auto">
+    <div className="relative w-full max-w-4xl mx-auto">
       <div className="overflow-hidden relative -z-50 h-[33rem] rounded-lg">
         <div
           className="flex transition-transform ease-out duration-500 "
@@ -39,18 +39,18 @@ const Carousel = () => {
 
       <button
         onClick={prevSlide}
-        className="absolute -z-20 top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
       >
         &#9664;
       </button>
       <button
         onClick={nextSlide}
-        className="absolute -z-20 top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
       >
         &#9654;
       </button>
 
-      <div className="absolute -z-[9999] bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute -z-10 bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <div
             key={index}
