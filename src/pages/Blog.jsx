@@ -24,8 +24,8 @@ export default function Blog() {
           <div key={index} className="bg-white p-4 items-center justify-center hover:shadow-md ">
             <img src={member.imgPath} alt={member.name} className="items-center justify-center object-cover h-28 m-1 w-28 border rounded-full" />
             <div className="p-4">
-              <h2 className="text-xl font-semibold">{member.name}</h2>
-              <a href={member.linkedin} className="text-blue-500" target="_blank" rel="noopener noreferrer">
+              <h2 className="items-center justify-center text-xl font-semibold">{member.name}</h2>
+              <a href={member.linkedin} className="items-center justify-center text-blue-500" target="_blank" rel="noopener noreferrer">
                 LinkedIn Profile
               </a>
             </div>
