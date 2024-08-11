@@ -24,7 +24,7 @@ export default function Blog() {
           <div key={index} className="flex flex-col items-center bg-white p-4 hover:shadow-md ">
             <img src={member.imgPath} alt={member.name} className=" object-cover h-28 m-1 w-28 border rounded-full" />
             <div className="p-4">
-              <h2 className="flex items-center justify-center text-xl font-semibold">{member.name}</h2>
+              <h2 className="flex items-center justify-center text-xl font-semibold overflow-hidden text-ellipsis w-full">{member.name}</h2>
               <a href={member.linkedin} className="flex items-center justify-center text-blue-500" target="_blank" rel="noopener noreferrer">
                 LinkedIn Profile
               </a>
