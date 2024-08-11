@@ -25,6 +25,7 @@ const Popup = ({isOpen, setIsOpen}) => {
             {/* close button */}
             <div onClick={() => {
               setClosed(true);
+              window.scrollTo(0, window.innerHeight);
               togglePopup();
             }} className="w-full flex justify-end text-white text-4xl hover:cursor-pointer hover:text-primary-foreground">
              <IoCloseSharp/>
