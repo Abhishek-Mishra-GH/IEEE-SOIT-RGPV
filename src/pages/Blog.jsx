@@ -21,7 +21,7 @@ export default function Blog() {
       <h1 className="text-2xl font-bold mb-4">Our Team</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {members.map((member, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg shadow-md">
+          <div key={index} className="bg-white p-4 rounded-lg shadow-md hover:shadow-black">
             <img src={member.imgPath} alt={member.name} className="w-full h-48 object-cover rounded-t-lg" />
             <div className="p-4">
               <h2 className="text-xl font-semibold">{member.name}</h2>
