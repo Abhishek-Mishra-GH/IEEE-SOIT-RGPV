@@ -22,7 +22,7 @@ export default function Blog() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {members.map((member, index) => (
           <div key={index} className="bg-white p-4 rounded-lg shadow-md hover:shadow-black">
-            <img src={member.imgPath} alt={member.name} className="w-full h-48 object-cover rounded-t-lg" />
+            <img src={member.imgPath} alt={member.name} className="h-28 m-1 w-28 border rounded-full" />
             <div className="p-4">
               <h2 className="text-xl font-semibold">{member.name}</h2>
               <a href={member.linkedin} className="text-blue-500" target="_blank" rel="noopener noreferrer">
