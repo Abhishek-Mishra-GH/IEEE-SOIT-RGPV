@@ -17,7 +17,7 @@ const Popup = ({isOpen, setIsOpen}) => {
     <div className={clsx(closed && "hidden",!isOpen && "hidden", isOpen && "flex items-center justify-center min-h-screen")}>
 
       {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
 
           {/* content */}
           <div className="bg-primary-background rounded px-6 py-4 shadow-lg max-w-sm w-full">
