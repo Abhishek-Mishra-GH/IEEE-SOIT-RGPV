@@ -21,8 +21,8 @@ export default function Blog() {
       <h1 className="flex items-center justify-center text-2xl font-bold mb-4">Our Team</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {members.map((member, index) => (
-          <div key={index} className="flex flex-col justify-center bg-white p-4 hover:shadow-md ">
-            <img src={member.imgPath} alt={member.name} className="relative left-15 object-cover h-28 m-1 w-28 border rounded-full" />
+          <div key={index} className="flex flex-col items-center bg-white p-4 hover:shadow-md ">
+            <img src={member.imgPath} alt={member.name} className=" object-cover h-28 m-1 w-28 border rounded-full" />
             <div className="p-4">
               <h2 className="flex items-center justify-center text-xl font-semibold">{member.name}</h2>
               <a href={member.linkedin} className="flex items-center justify-center text-blue-500" target="_blank" rel="noopener noreferrer">
