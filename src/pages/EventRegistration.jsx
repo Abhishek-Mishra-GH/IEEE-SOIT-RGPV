@@ -29,8 +29,8 @@ export default function EventRegistration() {
     const handleSubmit = (e) => {
 
         e.preventDefault();
-        if(teamMembers.length > 4) {
-            setError("* Maximum 5 members allowed in a team.");
+        if(teamMembers.length > 3) {
+            setError("* Maximum 4 members allowed in a team.");
             return;
         }
 
@@ -218,8 +218,8 @@ export default function EventRegistration() {
                                             onClick={(e) => {
                                                 e.preventDefault();
                                                 
-                                                if(teamMembers.length >= 4) {
-                                                    setError("* Maximum 5 members allowed in a team.");
+                                                if(teamMembers.length >= 3) {
+                                                    setError("* Maximum 4 members allowed in a team.");
                                                     return;
                                                 }
                                                 
