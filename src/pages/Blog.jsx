@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "../components/Navbar"
 import Pramanya from '../assets/ieee_team/Pramanya Rajput.jpg';
-import Oorja from '../assets/ieee_team/Oorja Jain.jpg';
+import Oorja from '../assets/ieee_team/Oorja Jain1.jpg';
 import Anchal from '../assets/ieee_team/Anchal Thakur.jpg';
 import Sumit from '../assets/ieee_team/Sumit Singh Raghuvanshi.jpg';
 
