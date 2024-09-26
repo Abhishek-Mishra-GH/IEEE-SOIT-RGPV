@@ -29,7 +29,7 @@ const ExecutiveCommittee = () => {
                 Educational Background
               </h2>
               <ul className="list-disc list-inside" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
-                <li>MCA in Computer Science from Smarat Ashok Technological Institute Vidisha (1994 - 2000)</li>
+                <p>Master Degree from Samrat Ashok Technology Institute, Vidisha and awarded Doctor of Philosophy in 2012 from Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal.</p>
               </ul>
             </section>
             <section className="mb-4 sm:mb-6">
@@ -37,26 +37,33 @@ const ExecutiveCommittee = () => {
                 Professional Experience and Research Work
               </h2>
               <p className="mb-2 sm:mb-4" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
-                Dr. Agrawal has 25 years of teaching and research experience, focusing on Data Mining, Soft Computing, Machine Learning, and Information Security.
+              Dr. Agrawal has 26 years of teaching and research experience, focusing on Data Mining, Soft Computing, Machine Learning, and Information Security. He is a Teacher, Researcher and Consultant in the field of Computer Science and Information Technology.
+Four PhD candidates completed PhD in her guidance and at present, He is supervising 04 PhD candidates. He has published more than 60 publications in International Journals and Conferences, 05 patents published, 12 chapters and Six books. 
+
               </p>
               <p className="mb-2 sm:mb-4" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}></p>
-              <ul className="list-disc list-inside" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
+              {/* <ul className="list-disc list-inside" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
                 <li>He has guided 45 Masters students and is currently guiding 07 doctoral and 05 Masters’ students.</li>
                 <li>He has published over 60 research papers, some awarded as best papers in reputed conferences.</li>
                 <li>He has authored 07 books.</li>
                 <li>Recipient of the Best Teacher award in Information Technology by World Education Congress.</li>
-              </ul>
+              </ul> */}
             </section>
             <section className="mb-4 sm:mb-6">
               <h2 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }}>
                 Contributions and Improvements:
               </h2>
-              <ul className="list-disc list-inside" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
+              {/* <ul className="list-disc list-inside" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
                 <li>Dr. Agrawal has significantly contributed to professional bodies like ACM, IEEE, and CSI.</li>
                 <li>Founding faculty sponsor for ACM Students Chapter at RGPV Bhopal.</li>
                 <li>Secretary of ACM Chapter Bhopal and Vice Chairman Cum Chairman Elect Computer Society of India Bhopal Chapter 2017-18.</li>
                 <li>Actively involved in editorial boards of several journals and international conference committees.</li>
-              </ul>
+              </ul> */}
+              <p>
+              He is a Senior Member of the IEEE, Life member of Computer Society of India (CSI), Life member of Indian Society of Technical Education (ISTE), Member of Youth Hostel Association of India (YHAI) etc.
+He is associated with the International Program Committees and Organizing Committees of several regular international conferences held in different countries like USA, India, New Zealand, Korea, Indonesia, Tunisia, Thailand, Morocco etc.
+
+              </p>
             </section>
             <section className="mb-4 sm:mb-6">
               <h2 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }}>
@@ -64,6 +71,12 @@ const ExecutiveCommittee = () => {
               </h2>
               <div className="mb-2 sm:mb-4" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
                 <ul className="list-disc list-inside" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
+                  <li>He is a Senior Member of the IEEE. </li>
+                  <li>Chair, R & D, IEEE MP Section</li>
+                  <li>Program Chair: 8th IEEE CSNT-2018 (International Conference on Communication Systems and Network Technologies)</li>
+                  <li>Technical Co-chair: IEEE WOCN-2019 (Sixteenth International Conference on Wireless and Optical Communications Networks)</li>
+                  <li>Program Chair: IEEE IDEA-2020 (International Conference on Data, Engineering and Applications)</li>
+                  <li>Secretary, IEEE MP Sub-Section</li>
                   <li>Bhopal representative of IEEE, MP Sub Section.</li>
                   <li>His involvement in IEEE has helped students at RGPV gain access to international conferences, workshops, and various professional development opportunities.</li>
                 </ul>
@@ -74,7 +87,7 @@ const ExecutiveCommittee = () => {
                 Gratitude
               </h2>
               <p className="mb-2 sm:mb-4" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
-                We extend our gratitude to Dr. Jitendra Agrawal for his relentless efforts in bringing new opportunities to our students through IEEE. His dedication has immensely uplifted the college and contributed to the professional growth of many.
+              We extend our gratitude to Dr. Jitendra Agrawal for his relentless efforts in bringing new opportunities to our students through IEEE. His dedication has immensely uplifted the institute and contributed to the professional growth of many.
               </p>
             </section>
           </div>
@@ -90,14 +103,14 @@ const ExecutiveCommittee = () => {
 
         <div className="flex flex-col items-center gap-4 p-4 max-h-[calc(100vh-10rem)]">
           <div className="flex justify-center">
-            <img src={image} className="h-72 rounded-lg " alt="img" />
+            <img src={image} className="h-80 rounded-lg " alt="img" />
           </div>
           <div className="w-[75%]">
             <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold" style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }}>
               Dr. Jitendra Agrawal- Counselor
             </h1>
             <p style={{ color: "#002250", fontFamily: "Poppins, sans-serif" }} className=" font-bold mb-1 sm:mb-10">
-              Associate Professor at School of Information Technology, Rajiv Gandhi Proudyogiki Vishwavidyalaya
+            Director, School of Information Technology, Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, MP, India
             </p>
           </div>
         </div>

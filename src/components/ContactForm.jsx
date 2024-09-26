@@ -2,6 +2,20 @@ import React, { useState } from "react"
 
 function ContactForm() {
   const [send, setSend] = useState(false);
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSend = () => {
+    if(fullName === "" || email === "" || message === "") {
+      setError("* Please fill all the fields");
+      return;
+    } else {
+      setError("");
+      setSend(true);
+    }
+  }
 
   return (
     <div className="grid justify-items-center m-6">
@@ -27,6 +41,8 @@ function ContactForm() {
                     className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-2 border-solid  border-zinc-300 shadow-lg"
                     name="name"
                     id="name"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
                     placeholder="Enter your name"
                     required
                   />
@@ -40,6 +56,8 @@ function ContactForm() {
                     type="email"
                     className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-300  shadow-lg"
                     id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter E-mail"
                     required
                   />
@@ -51,16 +69,21 @@ function ContactForm() {
                   <textarea
                     className="pl-3 mt-2 mb-6 rounded-md p-3 w-64 md:w-96 border-solid border-2 border-zinc-300   shadow-lg"
                     id="text"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     placeholder="Your message for us"
                     required
                   />
                 </div>
+                <p className="mb-4 text-red-500">
+                  <span>{error}</span>
+                </p>
 
                 <div className="flex justify-center">
                   <button
                     className="rounded-md border-solid border-2 border-zinc-500 pl-2 pr-2 bg-primary-background text-white w-28 text-lg"
                     type="submit"
-                    onClick={() => setSend(true)}
+                    onClick={handleSend}
                   >
                     Send
                   </button>

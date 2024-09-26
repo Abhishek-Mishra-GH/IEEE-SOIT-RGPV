@@ -70,8 +70,8 @@ function Navbar() {
         className="sm:hidden flex gap-4 text-lg text-white absolute top-24 right-4 flex-col bg-primary-background shadow-lg rounded-lg p-6">
 
           <CustomNavLink to="/"> Home </CustomNavLink>
-          <CustomNavLink to="/executivecommittee"> Executive Committee </CustomNavLink>
-          <CustomNavLink to="/operatingcommittee"> Operating Committee </CustomNavLink>
+          <CustomNavLink to="/executivecommittee"> Committee </CustomNavLink>
+          <CustomNavLink to="/operatingcommittee"> Student Committee 2024-25</CustomNavLink>
           <CustomNavLink to="/events"> Events </CustomNavLink>
           <CustomNavLink to="/gallery"> Gallery </CustomNavLink>
           <CustomNavLink to="/blog"> Blog </CustomNavLink>
