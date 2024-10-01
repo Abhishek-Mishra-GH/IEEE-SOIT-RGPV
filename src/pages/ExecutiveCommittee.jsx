@@ -38,7 +38,7 @@ const ExecutiveCommittee = () => {
               </h2>
               <p className="mb-2 sm:mb-4" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}>
               Dr. Agrawal has 26 years of teaching and research experience, focusing on Data Mining, Soft Computing, Machine Learning, and Information Security. He is a Teacher, Researcher and Consultant in the field of Computer Science and Information Technology.
-Four PhD candidates completed PhD in her guidance and at present, He is supervising 04 PhD candidates. He has published more than 60 publications in International Journals and Conferences, 05 patents published, 12 chapters and Six books. 
+Four PhD candidates completed PhD in his guidance and at present, He is supervising 04 PhD candidates. He has published more than 60 publications in International Journals and Conferences, 05 patents published, 12 chapters and Six books. 
 
               </p>
               <p className="mb-2 sm:mb-4" style={{ color: "#000", fontFamily: "Poppins, sans-serif" }}></p>
