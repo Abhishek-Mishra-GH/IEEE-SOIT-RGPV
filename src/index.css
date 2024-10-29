@@ -5,7 +5,7 @@
 /* Customizing react-big-calendar */
 
 .rbc-toolbar {
-  @apply text-white rounded-t-lg py-2 px-4;
+  @apply font-semibold rounded-t-lg py-2 px-4;
 }
 
 .rbc-toolbar button {
