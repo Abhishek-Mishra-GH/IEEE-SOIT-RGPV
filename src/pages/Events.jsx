@@ -28,7 +28,7 @@ const events = [
   },
   {
     id: 4,
-    title: "Stay tuned (Revealing Soon)",
+    title: "Eklavya",
     start: new Date(2024, 10, 7, 11, 0),
     end: new Date(2024, 10, 7, 17, 0),
   },
