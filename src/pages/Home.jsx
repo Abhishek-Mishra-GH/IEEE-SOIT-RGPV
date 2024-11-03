@@ -58,7 +58,7 @@ export default function Home() {
 
       </motion.div>
 
-      {/*<Popup isOpen={isPopupOpen} setIsOpen={setIsPopupOpen} />*/}
+      <Popup isOpen={isPopupOpen} setIsOpen={setIsPopupOpen} />
       <IEEE />
       <IEEEH />
       <IEEEBenifit />
