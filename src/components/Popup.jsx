@@ -40,13 +40,12 @@ const Popup = ({isOpen, setIsOpen}) => {
               </div>
 
               {/* register */}
+              <a href="https://forms.gle/Zx3nTpbnBKQ8fWVa7">
               <button 
-                onClick={() => {
-                  navigate("/eventregistration");
-                }}
                 className="w-full py-4 mt-3 font-semibold text-lg text-white border-2 border-white bg-[#1c1000] rounded hover:text-primary-foreground hover:border-primary-foreground">
                   Register Now!
               </button>
+              </a>
             </div>
           </div>
         </div>
