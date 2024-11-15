@@ -18,7 +18,7 @@
     "axios": "^1.7.3",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.11",
-    "framer-motion": "^11.2.10",
+    "framer-motion": "^11.11.17",
     "material-ui-popup-state": "^5.1.2",
     "react": "^18.2.0",
     "react-big-calendar": "^1.12.2",
@@ -26,6 +26,7 @@
     "react-icons": "^5.2.1",
     "react-intersection-observer": "^9.10.2",
     "react-router-dom": "^6.23.1",
+    "tailwind-merge": "^2.5.4",
     "tsparticles": "^3.4.0"
   },
   "devDependencies": {
